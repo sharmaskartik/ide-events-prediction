@@ -1,0 +1,711 @@
+  (array(["KaVE.Commons.Model.Events.ActivityEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.CommandEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.CompletionEvents.CompletionEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.NavigationEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.SystemEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.TestRunEvents.TestRunEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.UserProfiles.UserProfileEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.VersionControlEvents.VersionControlEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.VisualStudio.BuildEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.VisualStudio.DebuggerEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.VisualStudio.DocumentEvent, KaVE.Commons",
+
+       "KaVE.Commons.Model.Events.VisualStudio.EditEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.VisualStudio.FindEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.VisualStudio.IDEStateEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.VisualStudio.SolutionEvent, KaVE.Commons",
+       "KaVE.Commons.Model.Events.VisualStudio.WindowEvent, KaVE.Commons"],
+      dtype="<U80"), array([  26337, 1360439,   21247,   31431,     418,     170,      30,
+          6729,     703,    6019,   13655,   37730,      31,     501,
+           419,   55570]))
+
+
+
+
+
+ {
+ 	"$type": "KaVE.Commons.Model.Events.VersionControlEvents.VersionControlEvent, KaVE.Commons",
+ 	"Actions": [
+ 		{
+ 			"$type": "KaVE.Commons.Model.Events.VersionControlEvents.VersionControlAction, KaVE.Commons",
+ 			"ExecutedAt": "2016-10-27T10:23:58-04:00",
+ 			"ActionType": 3
+ 		}
+ 	],
+ 	"Solution": "0Sln:ReactsWindows",
+ 	"IDESessionUUID": "77f109b7-1631-4eb5-bcb5-7ff21ac243fe",
+ 	"KaVEVersion": "0.1013-Default",
+ 	"TriggeredAt": "2016-10-27T10:23:58-04:00",
+ 	"TriggeredBy": 0,
+ 	"Duration": "00:00:00.0005005",
+ 	"ActiveWindow": "0Win:vsWindowTypeDocument RoomParticipant.cs",
+ 	"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs"
+ }
+
+
+
+ {
+ 	"$type": "KaVE.Commons.Model.Events.CommandEvent, KaVE.Commons",
+ 	"CommandId": "VsAction:1:Debug.LocationToolbar.ProcessCombo",
+ 	"IDESessionUUID": "77f109b7-1631-4eb5-bcb5-7ff21ac243fe",
+ 	"KaVEVersion": "0.1013-Default",
+ 	"TriggeredAt": "2017-01-05T13:45:25.1504786-05:00",
+ 	"TriggeredBy": 0,
+ 	"ActiveWindow": "0Win:vsWindowTypeDocument RoomParticipant.cs",
+ 	"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs"
+ }
+
+ {
+ 	"$type": "KaVE.Commons.Model.Events.VisualStudio.IDEStateEvent, KaVE.Commons",
+ 	"IDELifecyclePhase": 0,
+ 	"OpenWindows": [
+ 		"0Win:vsWindowTypeDocument RoomParticipant.cs",
+ 		"0Win:vsWindowTypeDocument CircularBuffer.cs",
+ 		"0Win:vsWindowTypeDocument AsyncDisposableExtensions.cs",
+ 		"0Win:vsWindowTypeDocument BOCollectionViewSource.cs",
+ 		"0Win:vsWindowTypeDocument ChatConversationParticipantsCollectionViewSource.cs",
+ 		"0Win:vsWindowTypeDocument DataSet.cs",
+ 		"0Win:vsWindowTypeDocument CachedConfiguration.cs",
+ 		"0Win:vsWindowTypeDocument DictionaryValues.cs",
+ 		"0Win:vsWindowTypeDocument ObjectExtensions.cs",
+ 		"0Win:vsWindowTypeDocument OpenPreviewCommand.cs",
+ 		"0Win:vsWindowTypeDocument SendGridEmailService.cs",
+ 		"0Win:vsWindowTypeOutput Output",
+ 		"0Win:vsWindowTypeToolWindow Error List",
+ 		"0Win:vsWindowTypeSolutionExplorer Solution Explorer"
+ 	],
+ 	"OpenDocuments": [
+ 		"0Doc:CSharp objectextensions.cs",
+ 		"0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs",
+ 		"0Doc:CSharp sendgridemailservice.cs",
+ 		"0Doc:CSharp dataset.cs",
+ 		"0Doc:CSharp cachedconfiguration.cs",
+ 		"0Doc:CSharp chatconversationparticipantscollectionviewsource.cs",
+ 		"0Doc:CSharp circularbuffer.cs",
+ 		"0Doc:CSharp bocollectionviewsource.cs",
+ 		"0Doc:CSharp openpreviewcommand.cs",
+ 		"0Doc:CSharp asyncdisposableextensions.cs",
+ 		"0Doc:CSharp dictionaryvalues.cs"
+ 	],
+ 	"IDESessionUUID": "77f109b7-1631-4eb5-bcb5-7ff21ac243fe",
+ 	"KaVEVersion": "0.1013-Default",
+ 	"TriggeredAt": "2017-01-05T13:45:29.0161749-05:00",
+ 	"TriggeredBy": 0,
+ 	"Duration": "00:00:00.3243397",
+ 	"ActiveWindow": "0Win:vsWindowTypeDocument RoomParticipant.cs",
+ 	"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs"
+ }
+
+ {
+ "$type": "KaVE.Commons.Model.Events.VisualStudio.WindowEvent, KaVE.Commons",
+ "Window": "0Win:main Microsoft Visual Studio",
+ "Action": 1,
+ "IDESessionUUID": "77f109b7-1631-4eb5-bcb5-7ff21ac243fe",
+ "KaVEVersion": "0.1013-Default",
+ "TriggeredAt": "2017-01-05T13:45:29.886038-05:00",
+ "TriggeredBy": 0,
+ "Duration": "00:00:00.0010012",
+ "ActiveWindow": "0Win:vsWindowTypeDocument RoomParticipant.cs",
+ "ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs"
+}
+
+{
+"$type": "KaVE.Commons.Model.Events.ActivityEvent, KaVE.Commons",
+"IDESessionUUID": "77f109b7-1631-4eb5-bcb5-7ff21ac243fe",
+"KaVEVersion": "0.1013-Default",
+"TriggeredAt": "2017-01-05T13:45:32.26816-05:00",
+"TriggeredBy": 1,
+"Duration": "00:00:00.0810776",
+"ActiveWindow": "0Win:vsWindowTypeDocument RoomParticipant.cs",
+"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs"
+}
+
+{
+	"$type": "KaVE.Commons.Model.Events.VisualStudio.EditEvent, KaVE.Commons",
+	"Context2": {
+		"$type": "KaVE.Commons.Model.Events.CompletionEvents.Context, KaVE.Commons",
+		"TypeShape": {
+			"$type": "KaVE.Commons.Model.TypeShapes.TypeShape, KaVE.Commons",
+			"TypeHierarchy": {
+				"$type": "KaVE.Commons.Model.TypeShapes.TypeHierarchy, KaVE.Commons",
+				"Element": "0T:?",
+				"Implements": []
+			},
+			"NestedTypes": [],
+			"Delegates": [],
+			"EventHierarchies": [],
+			"Fields": [],
+			"MethodHierarchies": [],
+			"PropertyHierarchies": []
+		},
+		"SST": {
+			"$type": "[SST:SST]",
+			"EnclosingType": "0T:?",
+			"Fields": [],
+			"Properties": [],
+			"Methods": [],
+			"Events": [],
+			"Delegates": []
+		}
+	},
+	"NumberOfChanges": 2,
+	"SizeOfChanges": 234,
+	"IDESessionUUID": "77f109b7-1631-4eb5-bcb5-7ff21ac243fe",
+	"KaVEVersion": "0.1013-Default",
+	"TriggeredAt": "2017-01-05T13:45:33.7686129-05:00",
+	"TriggeredBy": 0,
+	"Duration": "00:00:02.1370510",
+	"ActiveWindow": "0Win:vsWindowTypeDocument RoomParticipant.cs",
+	"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs"
+}
+
+{
+	"$type": "KaVE.Commons.Model.Events.NavigationEvent, KaVE.Commons",
+	"Target": "0General:???",
+	"Location": "0M:[System.Threading.Tasks.Task`1[[TResult -> p:bool]], System.Threading.Tasks, 4.0.0.0] [?].RefreshFromUserEntityInternalAsync()",
+	"TypeOfNavigation": 2,
+	"IDESessionUUID": "77f109b7-1631-4eb5-bcb5-7ff21ac243fe",
+	"KaVEVersion": "0.1013-Default",
+	"TriggeredAt": "2017-01-05T13:45:44.9830627-05:00",
+	"TriggeredBy": 1,
+	"ActiveWindow": "0Win:vsWindowTypeDocument RoomParticipant.cs",
+	"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs"
+}
+
+{
+	"$type": "KaVE.Commons.Model.Events.VisualStudio.SolutionEvent, KaVE.Commons",
+	"Action": 0,
+	"Target": "0Sln:C:\\Dev\\Reacts.Windows\\ReactsWindows.sln",
+	"IDESessionUUID": "77f109b7-1631-4eb5-bcb5-7ff21ac243fe",
+	"KaVEVersion": "0.1013-Default",
+	"TriggeredAt": "2017-01-05T13:47:08.4229234-05:00",
+	"TriggeredBy": 0,
+	"Duration": "00:00:00",
+	"ActiveWindow": "0Win:vsWindowTypeDocument RoomParticipant.cs",
+	"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs"
+}
+
+{
+	"$type": "KaVE.Commons.Model.Events.VisualStudio.DocumentEvent, KaVE.Commons",
+	"Document": "0Doc:CSharp bocollectionviewsource.cs",
+	"Action": 2,
+	"IDESessionUUID": "77f109b7-1631-4eb5-bcb5-7ff21ac243fe",
+	"KaVEVersion": "0.1013-Default",
+	"TriggeredAt": "2017-01-05T13:48:24.470953-05:00",
+	"TriggeredBy": 0,
+	"Duration": "00:00:00.0005006",
+	"ActiveWindow": "0Win:vsWindowTypeDocument RoomParticipant.cs",
+	"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Rooms\\RoomParticipant.cs"
+}
+
+
+{
+	"$type": "KaVE.Commons.Model.Events.CompletionEvents.CompletionEvent, KaVE.Commons",
+	"Context2": {
+		"$type": "KaVE.Commons.Model.Events.CompletionEvents.Context, KaVE.Commons",
+		"TypeShape": {
+			"$type": "KaVE.Commons.Model.TypeShapes.TypeShape, KaVE.Commons",
+			"TypeHierarchy": {
+				"$type": "KaVE.Commons.Model.TypeShapes.TypeHierarchy, KaVE.Commons",
+				"Element": "0T:IIT.Common.ExtensionMethods.ObjectExtensions, IIT.Common",
+				"Implements": []
+			},
+			"NestedTypes": [],
+			"Delegates": [],
+			"EventHierarchies": [],
+			"Fields": [],
+			"MethodHierarchies": [
+				{
+					"$type": "KaVE.Commons.Model.TypeShapes.MethodHierarchy, KaVE.Commons",
+					"Element": "0M:static [System.Collections.Generic.List`1[[T -> T]], System.Collections, 4.0.0.0] [IIT.Common.ExtensionMethods.ObjectExtensions, IIT.Common].ObjectToList`1[[T]](this [T] instance)"
+				},
+				{
+					"$type": "KaVE.Commons.Model.TypeShapes.MethodHierarchy, KaVE.Commons",
+					"Element": "0M:static [System.Threading.Tasks.Task`1[[TResult -> T]], System.Threading.Tasks, 4.0.0.0] [IIT.Common.ExtensionMethods.ObjectExtensions, IIT.Common].ToTaskResult`1[[T]](this [T] instance)"
+				},
+				{
+					"$type": "KaVE.Commons.Model.TypeShapes.MethodHierarchy, KaVE.Commons",
+					"Element": "0M:static [T] [IIT.Common.ExtensionMethods.ObjectExtensions, IIT.Common].CreateCopy`1[[T]](this [T] source)"
+				},
+				{
+					"$type": "KaVE.Commons.Model.TypeShapes.MethodHierarchy, KaVE.Commons",
+					"Element": "0M:[?] [?].???()"
+				}
+			],
+			"PropertyHierarchies": []
+		},
+		"SST": {
+			"$type": "[SST:SST]",
+			"EnclosingType": "0T:IIT.Common.ExtensionMethods.ObjectExtensions, IIT.Common",
+			"Fields": [],
+			"Properties": [],
+			"Methods": [
+				{
+					"$type": "[SST:Declarations.MethodDeclaration]",
+					"Name": "0M:static [System.Collections.Generic.List`1[[T -> T]], System.Collections, 4.0.0.0] [IIT.Common.ExtensionMethods.ObjectExtensions, IIT.Common].ObjectToList`1[[T]](this [T] instance)",
+					"IsEntryPoint": "True",
+					"Body": [
+						{
+							"$type": "[SST:Statements.VariableDeclaration]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$0"
+							},
+							"Type": "0T:p:bool"
+						},
+						{
+							"$type": "[SST:Statements.Assignment]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$0"
+							},
+							"Expression": {
+								"$type": "[SST:Expressions.Assignable.InvocationExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": ""
+								},
+								"MethodName": "0M:static [p:bool] [p:object].Equals([p:object] objA, [p:object] objB)",
+								"Parameters": [
+									{
+										"$type": "[SST:Expressions.Simple.ConstantValueExpression]",
+										"Value": "default"
+									},
+									{
+										"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+										"Reference": {
+											"$type": "[SST:References.VariableReference]",
+											"Identifier": "instance"
+										}
+									}
+								]
+							}
+						},
+						{
+							"$type": "[SST:Statements.VariableDeclaration]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$1"
+							},
+							"Type": "0T:System.Collections.Generic.List`1[[T -> T]], System.Collections, 4.0.0.0"
+						},
+						{
+							"$type": "[SST:Statements.Assignment]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$1"
+							},
+							"Expression": {
+								"$type": "[SST:Expressions.Assignable.InvocationExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": ""
+								},
+								"MethodName": "0M:[p:void] [System.Collections.Generic.List`1[[T -> T]], System.Collections, 4.0.0.0]..ctor()",
+								"Parameters": []
+							}
+						},
+						{
+							"$type": "[SST:Statements.VariableDeclaration]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$2"
+							},
+							"Type": "0T:System.Collections.Generic.List`1[[T -> T]], System.Collections, 4.0.0.0"
+						},
+						{
+							"$type": "[SST:Statements.Assignment]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$2"
+							},
+							"Expression": {
+								"$type": "[SST:Expressions.Assignable.InvocationExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": ""
+								},
+								"MethodName": "0M:[p:void] [System.Collections.Generic.List`1[[T -> T]], System.Collections, 4.0.0.0]..ctor()",
+								"Parameters": []
+							}
+						},
+						{
+							"$type": "[SST:Statements.ExpressionStatement]",
+							"Expression": {
+								"$type": "[SST:Expressions.Assignable.InvocationExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": "$2"
+								},
+								"MethodName": "0M:[p:void] [System.Collections.Generic.List`1[[T -> T]], System.Collections, 4.0.0.0].Add([T] item)",
+								"Parameters": [
+									{
+										"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+										"Reference": {
+											"$type": "[SST:References.VariableReference]",
+											"Identifier": "instance"
+										}
+									}
+								]
+							}
+						},
+						{
+							"$type": "[SST:Statements.VariableDeclaration]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$3"
+							},
+							"Type": "0T:System.Collections.Generic.List`1[[T -> T]], System.Collections, 4.0.0.0"
+						},
+						{
+							"$type": "[SST:Statements.Assignment]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$3"
+							},
+							"Expression": {
+								"$type": "[SST:Expressions.Assignable.IfElseExpression]",
+								"Condition": {
+									"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+									"Reference": {
+										"$type": "[SST:References.VariableReference]",
+										"Identifier": "$0"
+									}
+								},
+								"ThenExpression": {
+									"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+									"Reference": {
+										"$type": "[SST:References.VariableReference]",
+										"Identifier": "$1"
+									}
+								},
+								"ElseExpression": {
+									"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+									"Reference": {
+										"$type": "[SST:References.VariableReference]",
+										"Identifier": "$2"
+									}
+								}
+							}
+						},
+						{
+							"$type": "[SST:Statements.ReturnStatement]",
+							"Expression": {
+								"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": "$3"
+								}
+							},
+							"IsVoid": "False"
+						}
+					]
+				},
+				{
+					"$type": "[SST:Declarations.MethodDeclaration]",
+					"Name": "0M:static [System.Threading.Tasks.Task`1[[TResult -> T]], System.Threading.Tasks, 4.0.0.0] [IIT.Common.ExtensionMethods.ObjectExtensions, IIT.Common].ToTaskResult`1[[T]](this [T] instance)",
+					"IsEntryPoint": "True",
+					"Body": [
+						{
+							"$type": "[SST:Statements.VariableDeclaration]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$0"
+							},
+							"Type": "0T:System.Threading.Tasks.Task`1[[TResult -> T]], System.Threading.Tasks, 4.0.0.0"
+						},
+						{
+							"$type": "[SST:Statements.Assignment]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$0"
+							},
+							"Expression": {
+								"$type": "[SST:Expressions.Assignable.InvocationExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": ""
+								},
+								"MethodName": "0M:static [System.Threading.Tasks.Task`1[[TResult -> TResult]], System.Threading.Tasks, 4.0.0.0] [System.Threading.Tasks.Task, System.Threading.Tasks, 4.0.0.0].FromResult`1[[TResult -> T]]([TResult] result)",
+								"Parameters": [
+									{
+										"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+										"Reference": {
+											"$type": "[SST:References.VariableReference]",
+											"Identifier": "instance"
+										}
+									}
+								]
+							}
+						},
+						{
+							"$type": "[SST:Statements.ReturnStatement]",
+							"Expression": {
+								"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": "$0"
+								}
+							},
+							"IsVoid": "False"
+						}
+					]
+				},
+				{
+					"$type": "[SST:Declarations.MethodDeclaration]",
+					"Name": "0M:static [T] [IIT.Common.ExtensionMethods.ObjectExtensions, IIT.Common].CreateCopy`1[[T]](this [T] source)",
+					"IsEntryPoint": "True",
+					"Body": [
+						{
+							"$type": "[SST:Statements.VariableDeclaration]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "serialized"
+							},
+							"Type": "0T:p:string"
+						},
+						{
+							"$type": "[SST:Statements.Assignment]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "serialized"
+							},
+							"Expression": {
+								"$type": "[SST:Expressions.Assignable.InvocationExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": ""
+								},
+								"MethodName": "0M:static [p:string] [Newtonsoft.Json.JsonConvert, Newtonsoft.Json, 9.0.0.0].SerializeObject([p:object] value)",
+								"Parameters": [
+									{
+										"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+										"Reference": {
+											"$type": "[SST:References.VariableReference]",
+											"Identifier": "source"
+										}
+									}
+								]
+							}
+						},
+						{
+							"$type": "[SST:Statements.VariableDeclaration]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$0"
+							},
+							"Type": "0T:T"
+						},
+						{
+							"$type": "[SST:Statements.Assignment]",
+							"Reference": {
+								"$type": "[SST:References.VariableReference]",
+								"Identifier": "$0"
+							},
+							"Expression": {
+								"$type": "[SST:Expressions.Assignable.InvocationExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": ""
+								},
+								"MethodName": "0M:static [T] [Newtonsoft.Json.JsonConvert, Newtonsoft.Json, 9.0.0.0].DeserializeObject`1[[T -> T]]([p:string] value)",
+								"Parameters": [
+									{
+										"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+										"Reference": {
+											"$type": "[SST:References.VariableReference]",
+											"Identifier": "serialized"
+										}
+									}
+								]
+							}
+						},
+						{
+							"$type": "[SST:Statements.ReturnStatement]",
+							"Expression": {
+								"$type": "[SST:Expressions.Simple.ReferenceExpression]",
+								"Reference": {
+									"$type": "[SST:References.VariableReference]",
+									"Identifier": "$0"
+								}
+							},
+							"IsVoid": "False"
+						}
+					]
+				},
+				{
+					"$type": "[SST:Declarations.MethodDeclaration]",
+					"Name": "0M:[?] [?].???()",
+					"IsEntryPoint": "False",
+					"Body": []
+				}
+			],
+			"Events": [],
+			"Delegates": []
+		}
+	},
+	"ProposalCollection": [
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:System.Threading.Tasks.Task, System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:System.Threading.Tasks.Task`1[[TResult]], System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:System.Threading.Tasks.TaskCanceledException, System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:System.Threading.Tasks.TaskCompletionSource`1[[TResult]], System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:e:System.Threading.Tasks.TaskContinuationOptions, System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:e:System.Threading.Tasks.TaskCreationOptions, System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:IIT.Common.ExtensionMethods.TaskExtensions, IIT.Common"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:System.Threading.Tasks.TaskFactory, System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:System.Threading.Tasks.TaskFactory`1[[TResult]], System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:System.Threading.Tasks.TaskScheduler, System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:System.Threading.Tasks.TaskSchedulerException, System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:e:System.Threading.Tasks.TaskStatus, System.Threading.Tasks, 4.0.0.0"
+		},
+		{
+			"$type": "KaVE.Commons.Model.Events.CompletionEvents.Proposal, KaVE.Commons",
+			"Name": "0T:System.Threading.Tasks.UnobservedTaskExceptionEventArgs, System.Threading.Tasks, 4.0.0.0"
+		}
+	],
+	"Selections": [],
+	"TerminatedBy": 4,
+	"TerminatedState": 2,
+	"ProposalCount": 13,
+	"IDESessionUUID": "d3acd580-83a7-4d7e-8c45-382adc5a576b",
+	"KaVEVersion": "0.1013-Default",
+	"TriggeredAt": "2017-01-05T13:59:19.3029377-05:00",
+	"TriggeredBy": 0,
+	"Duration": "00:00:00.1496444",
+	"ActiveWindow": "0Win:vsWindowTypeDocument ObjectExtensions.cs",
+	"ActiveDocument": "0Doc:CSharp objectextensions.cs"
+}
+
+           {
+           	"$type": "KaVE.Commons.Model.Events.VisualStudio.BuildEvent, KaVE.Commons",
+           	"Scope": "vsBuildScopeSolution",
+           	"Action": "vsBuildActionBuild",
+           	"Targets": [
+           		{
+           			"$type": "KaVE.Commons.Model.Events.VisualStudio.BuildTarget, KaVE.Commons",
+           			"Project": "TestRO.csproj",
+           			"ProjectConfiguration": "Debug",
+           			"Platform": "Any CPU",
+           			"SolutionConfiguration": "Debug|Any CPU",
+           			"StartedAt": "2017-01-05T14:52:15.3112054-05:00",
+           			"Duration": "00:00:03.6119551",
+           			"Successful": "True"
+           		}
+           	],
+           	"IDESessionUUID": "7de4e5cd-3f30-442a-ac65-ef948b0b9609",
+           	"KaVEVersion": "0.1013-Default",
+           	"TriggeredAt": "2017-01-05T14:52:15.2526494-05:00",
+           	"TriggeredBy": 0,
+           	"Duration": "00:00:03.7125517",
+           	"ActiveWindow": "0Win:vsWindowTypeOutput Output",
+           	"ActiveDocument": "0Doc:CSharp \\UserEntity.cs"
+           }
+           {
+         	"$type": "KaVE.Commons.Model.Events.VisualStudio.DebuggerEvent, KaVE.Commons",
+         	"Mode": 1,
+         	"Reason": "dbgEventReasonLaunchProgram",
+         	"IDESessionUUID": "d3acd580-83a7-4d7e-8c45-382adc5a576b",
+         	"KaVEVersion": "0.1013-Default",
+         	"TriggeredAt": "2017-01-05T15:03:10.5992087-05:00",
+         	"TriggeredBy": 0,
+         	"Duration": "00:00:22.3406105",
+         	"ActiveWindow": "0Win:vsWindowTypeDocument UserBOInternal.cs",
+         	"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services\\Users\\UserBOInternal.cs"
+         }
+
+
+         {
+         	"$type": "KaVE.Commons.Model.Events.VisualStudio.FindEvent, KaVE.Commons",
+         	"Cancelled": "False",
+         	"IDESessionUUID": "d3acd580-83a7-4d7e-8c45-382adc5a576b",
+         	"KaVEVersion": "0.1013-Default",
+         	"TriggeredAt": "2017-01-05T15:50:35.8524359-05:00",
+         	"TriggeredBy": 0,
+         	"Duration": "00:00:00",
+         	"ActiveWindow": "0Win:vsWindowTypeToolWindow Find Results 1",
+         	"ActiveDocument": "0Doc:CSharp \\IIT.Reacts.Engine.Services.Shared\\ThumbnailGenerator.cs"
+         }
+
+           {
+           	"$type": "KaVE.Commons.Model.Events.SystemEvent, KaVE.Commons",
+           	"Type": 3,
+           	"IDESessionUUID": "7de4e5cd-3f30-442a-ac65-ef948b0b9609",
+           	"KaVEVersion": "0.1013-Default",
+           	"TriggeredAt": "2017-01-05T17:08:19.703287-05:00",
+           	"TriggeredBy": 0,
+           	"Duration": "00:00:00.0005002",
+           	"ActiveWindow": "0Win:vsWindowTypeSolutionExplorer Solution Explorer",
+           	"ActiveDocument": "0Doc:CSharp \\FileContext.cs"
+           }
+
+           {
+           	"$type": "KaVE.Commons.Model.Events.SystemEvent, KaVE.Commons",
+           	"Type": 3,
+           	"IDESessionUUID": "7de4e5cd-3f30-442a-ac65-ef948b0b9609",
+           	"KaVEVersion": "0.1013-Default",
+           	"TriggeredAt": "2017-01-05T17:08:19.703287-05:00",
+           	"TriggeredBy": 0,
+           	"Duration": "00:00:00.0005002",
+           	"ActiveWindow": "0Win:vsWindowTypeSolutionExplorer Solution Explorer",
+           	"ActiveDocument": "0Doc:CSharp \\FileContext.cs"
+           }
+
+
+
+
+{
+	"$type": "KaVE.Commons.Model.Events.TestRunEvents.TestRunEvent, KaVE.Commons",
+	"WasAborted": "False",
+	"Tests": [
+		{
+			"$type": "KaVE.Commons.Model.Events.TestRunEvents.TestCaseResult, KaVE.Commons",
+			"TestMethod": "0M:[p:void] [IIT.Common.Testing.Unit.Tests.MetricsQueueTests, IIT.Common.Testing.Unit].When_Adding_Items_Then_Event_Is_Raised()",
+			"Parameters": "",
+			"StartTime": "2017-01-17T19:33:14.9780939+00:00",
+			"Duration": "00:00:00.0555030",
+			"Result": 1
+		}
+	],
+	"IDESessionUUID": "6eac9090-2d4c-4af0-93e0-0a3f8e1fed50",
+	"KaVEVersion": "0.1013-Default",
+	"TriggeredAt": "2017-01-17T19:32:44.6923261+00:00",
+	"TriggeredBy": 0,
+	"Duration": "00:00:00",
+	"ActiveWindow": "0Win:vsWindowTypeToolWindow Unit Test Sessions - All tests from ClientServerSynchronizationTests.cs",
+	"ActiveDocument": "0Doc:CSharp \\IIT.Common.Testing.Unit\\Tests\\MetricsQueueTests.cs"
+}
