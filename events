@@ -1,21 +1,21 @@
-  (array(["KaVE.Commons.Model.Events.ActivityEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.CommandEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.CompletionEvents.CompletionEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.NavigationEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.SystemEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.TestRunEvents.TestRunEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.UserProfiles.UserProfileEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.VersionControlEvents.VersionControlEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.VisualStudio.BuildEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.VisualStudio.DebuggerEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.VisualStudio.DocumentEvent, KaVE.Commons",
+  (array(["KaVE.Commons.Model.Events.ActivityEvent, KaVE.Commons", 26337
+       "KaVE.Commons.Model.Events.CommandEvent, KaVE.Commons", 1360439
+       "KaVE.Commons.Model.Events.CompletionEvents.CompletionEvent, KaVE.Commons", 21247
+       "KaVE.Commons.Model.Events.NavigationEvent, KaVE.Commons", 31431
+       "KaVE.Commons.Model.Events.SystemEvent, KaVE.Commons",418
+       "KaVE.Commons.Model.Events.TestRunEvents.TestRunEvent, KaVE.Commons",170
+       "KaVE.Commons.Model.Events.UserProfiles.UserProfileEvent, KaVE.Commons",30
+       "KaVE.Commons.Model.Events.VersionControlEvents.VersionControlEvent, KaVE.Commons",6729
+       "KaVE.Commons.Model.Events.VisualStudio.BuildEvent, KaVE.Commons",703
+       "KaVE.Commons.Model.Events.VisualStudio.DebuggerEvent, KaVE.Commons",6019
+       "KaVE.Commons.Model.Events.VisualStudio.DocumentEvent, KaVE.Commons",13655
 
-       "KaVE.Commons.Model.Events.VisualStudio.EditEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.VisualStudio.FindEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.VisualStudio.IDEStateEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.VisualStudio.SolutionEvent, KaVE.Commons",
-       "KaVE.Commons.Model.Events.VisualStudio.WindowEvent, KaVE.Commons"],
-      dtype="<U80"), array([  26337, 1360439,   21247,   31431,     418,     170,      30,
+       "KaVE.Commons.Model.Events.VisualStudio.EditEvent, KaVE.Commons",37730
+       "KaVE.Commons.Model.Events.VisualStudio.FindEvent, KaVE.Commons",31
+       "KaVE.Commons.Model.Events.VisualStudio.IDEStateEvent, KaVE.Commons",501
+       "KaVE.Commons.Model.Events.VisualStudio.SolutionEvent, KaVE.Commons",419
+       "KaVE.Commons.Model.Events.VisualStudio.WindowEvent, KaVE.Commons"],55570
+      dtype="<U80"), array([  , ,   ,   ,     418,     170,      30,
           6729,     703,    6019,   13655,   37730,      31,     501,
            419,   55570]))
 
@@ -672,19 +672,6 @@
            	"ActiveWindow": "0Win:vsWindowTypeSolutionExplorer Solution Explorer",
            	"ActiveDocument": "0Doc:CSharp \\FileContext.cs"
            }
-
-           {
-           	"$type": "KaVE.Commons.Model.Events.SystemEvent, KaVE.Commons",
-           	"Type": 3,
-           	"IDESessionUUID": "7de4e5cd-3f30-442a-ac65-ef948b0b9609",
-           	"KaVEVersion": "0.1013-Default",
-           	"TriggeredAt": "2017-01-05T17:08:19.703287-05:00",
-           	"TriggeredBy": 0,
-           	"Duration": "00:00:00.0005002",
-           	"ActiveWindow": "0Win:vsWindowTypeSolutionExplorer Solution Explorer",
-           	"ActiveDocument": "0Doc:CSharp \\FileContext.cs"
-           }
-
 
 
 
