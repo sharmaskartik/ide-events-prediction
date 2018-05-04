@@ -1,7 +1,10 @@
 import json
 import numpy as np
 from os import listdir
-
+from datetime import datetime
+import time
+from dateutil import parser
+import pickle
 
 ACTIVITY_EVENT = "KaVE.Commons.Model.Events.ActivityEvent, KaVE.Commons"
 COMMAND_EVENT = "KaVE.Commons.Model.Events.CommandEvent, KaVE.Commons"
@@ -78,15 +81,16 @@ VERSION_CONTROL_EVENT = "KaVE.Commons.Model.Events.VersionControlEvents.VersionC
 version_control_action_type = {
     "0": "Unknown",
     "1": "Branch",
-    "2": "Clone",
-    "3": "Commit",
-    "4": "CommitAmend",
-    "5": "CommitInitial",
-    "6": "Merge",
-    "7": "Pull",
-    "8": "Rebase",
-    "9": "RebaseFinished",
-    "10": "Reset"
+    "2": "Checkout",
+    "3": "Clone",
+    "4": "Commit",
+    "5": "CommitAmend",
+    "6": "CommitInitial",
+    "7": "Merge",
+    "8": "Pull",
+    "9": "Rebase",
+    "10": "RebaseFinished",
+    "11": "Reset"
 }
 
 
@@ -119,8 +123,8 @@ test_result = {
     "4": "Ignored"
 }
 
-#INFO_EVENT =
-#ERROR_EVENT =
+INFO_EVENT = ""
+ERROR_EVENT = ""
 
 
 # EVENT DICTIONARIES
@@ -133,11 +137,9 @@ triggered_by = {
 }
 
 
-
-
 dirPath = "../dataset/main"
-types = []
 events = []
+
 for dateDir in listdir(dirPath):
     print("In "+dateDir)
     for userDir in listdir(dirPath+"/"+dateDir):
@@ -146,13 +148,120 @@ for dateDir in listdir(dirPath):
         print("In "+dirPath+"/"+dateDir+"/"+userDir," ----- contains "+str(numFiles)+" number of files")
         for i in range(numFiles):
             data = json.load(open(dirPath+"/"+dateDir+"/"+userDir+"/"+str(i)+".json"))
-            # try:
-            #     types.index(data['$type'])
-            # except ValueError:
-            #     types.append(data['$type'])
-            #     events.append(data)
-            if data['$type'] == EDIT_EVENT:
-                types.append(data["NumberOfChanges"])
+            event_type = data['$type']
 
-types = np.array(types)
-print(np.unique(types, return_counts=True))
+            if "ErrorEvent" in event_type or "InfoEvent" in event_type:
+                print(event_type)
+
+            if event_type == INFO_EVENT or event_type == USER_PROFILE_EVENT:
+                continue
+
+            word = event_type.split(",")[0].split(".")[-1] + "_"
+
+            if  event_type == COMMAND_EVENT:
+                word += str(data['CommandId'].replace(" ","_"))
+
+            elif event_type == IDE_STATE_EVENT:
+                word += ide_life_cycle_phase[str(data['IDELifecyclePhase'])]
+
+            elif event_type == WINDOW_EVENT:
+                word += window_action[str(data['Action'])]
+
+            elif event_type == DOCUMENT_EVENT:
+                word += document_action[str(data['Action'])]
+
+            elif event_type == SOLUTION_EVENT:
+                word += solution_action[str(data['Action'])]
+
+
+            elif event_type == NAVIGATION_EVENT:
+                word += navigation_type[str(data['TypeOfNavigation'])]
+
+            elif event_type == COMPLETION_EVENT:
+                word += completion_termination_state[str(data['TerminatedState'])]
+
+            elif event_type == BUILD_EVENT:
+                word += str(data['Scope']) + "_" + str(data['Action'])
+
+            elif event_type == DEBUGGER_EVENT:
+                try:
+                    word += debugger_mode[str(data['Mode'])] + "_" + str(data['Reason']) + str(data['Action'])
+                except:
+                    word += debugger_mode[str(data['Mode'])] + "_" + str(data['Reason'])
+            elif event_type == FIND_EVENT:
+                word += "Cancelled_" + str(data['Cancelled'])
+
+            elif event_type == SYSTEM_EVENT:
+                word += system_event_type[str(data['Type'])]
+
+            elif event_type == TEST_RUN_EVENT:
+                tests = data["Tests"]
+                allPass = True
+                for test in tests:
+                    if test['Result'] == 0:
+                        allPass = False
+                        break
+                if allPass:
+                    result = "Pass"
+                else:
+                    result = "Fail"
+                word += "Aborted_" + str(data['WasAborted']) + "_" + result
+
+            elif event_type == VERSION_CONTROL_EVENT:
+                actions = data["Actions"]
+                for action in actions:
+                    vcWord  = word + version_control_action_type[str(action['ActionType'])]
+                    time = action["ExecutedAt"]
+                    events.append([vcWord, time])
+                continue
+
+
+            #word += "_" + triggered_by[str(data["TriggeredBy"])]
+
+            time = data["TriggeredAt"]
+
+            events.append([word, time])
+
+events = np.array(events)
+
+with open(r"vocabulary.pickle", "wb") as output_file:
+    pickle.dump(events[:,0], output_file)
+
+
+## WE HAVE THE DATA HERE IN ONE ARRAY
+## NOW WE HAVE TO CREATE SESSIONS
+
+print(events.shape)
+
+sessions = []
+tempSession = []
+lastTime = int(parser.parse(events[0][1]).strftime("%s"))
+
+for event in events:
+
+    currentTime = int(parser.parse(event[1]).strftime("%s"))
+    if(currentTime - lastTime > 300):
+        sessions.append(tempSession)
+        tempSession = []
+        #print("difference greater than 5 minutes")
+    tempSession.append(event[0])
+
+    lastTime = currentTime
+
+
+# NOW CREATE WINDOWS FROM SESSIONS
+windowSizes = [50, 100, 150, 200]
+
+for windowSize in windowSizes:
+    windows = np.zeros([1, windowSize])
+    for session in sessions:
+        session = np.array(session)
+
+        start = 0
+        while start + windowSize < session.shape[0]:
+            windows = np.vstack((windows, session[start: start + windowSize]))
+            start  += windowSize
+    windows = windows[1:, :] # remove the first rows of zeros
+    with open(r"data_"+str(windowSize)+".pickle", "wb") as output_file:
+        pickle.dump(windows, output_file)
+    print(windows.shape)
