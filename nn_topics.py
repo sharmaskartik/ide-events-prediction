@@ -25,6 +25,20 @@ def getAccuracy(net, X):
     accuracy = totalCorrect / totalSamples
     return accuracy
 
+
+
+def rollingWindows(X, windowSize):
+    nSamples, nAttributes = X.shape
+    nWindows = nSamples - windowSize + 1
+    # Shape of resulting matrix
+    newShape = (nWindows, nAttributes * windowSize)
+    itemSize = X.itemsize  # number of bytes
+    # Number of bytes to increment to starting element in each dimension
+    strides = (nAttributes * itemSize, itemSize)
+    return np.lib.stride_tricks.as_strided(X, shape=newShape, strides=strides)
+
+
+
 def main():
 
     #files = [r"topics_50.pickle", r"topics_100.pickle", r"topics_150.pickle", r"topics_200.pickle"]
@@ -34,19 +48,13 @@ def main():
         window_sizes = [1 , 3, 5]
 
         for window_size in window_sizes:
+            print("Working on: "+file+", at window_size: "+ str(window_size))
             with open(r"topics_"+file+".pickle", "rb") as input_file:
                 topics = pickle.load(input_file)
 
-            topics = topics.flatten()
-            rolled_data = np.zeros([1, window_size])
-            start = 0
-            while start + window_size <= topics.shape[0]:
-                rolled_data = np.vstack((rolled_data, topics[start: start + window_size]))
-                start  += window_size
-            X = rolled_data[1:, :] # remove the first rows of zeros
+            X = rollingWindows(topics, window_size)
 
-            T = X[1:,0].reshape(-1,1)
-            X = X[:-1,:]
+            print(X.shape)
 
             # MAIN CODE STARTS HERE
             # MAKE SURE THAT T CONTAINS TARGETS AS LABELS BETWEEN 0  AND num_topics-1
