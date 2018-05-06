@@ -79,27 +79,27 @@ def main():
             optimizer = optim.SGD(net.parameters(), lr=learning_rate, momentum=0.9)
 
             accuracyTrace =[]
-            
-            
+
             #TRAINING THE NETWORK
             for epoch in range(2000):  # loop over the dataset multiple times
-            
+
                 running_loss = 0.0
                 for i, data in enumerate(trainloader, 0):
-                    # get the inputs
-                    inputs =  data[:,:-1]
-                    labels = data[:,-1].type(torch.cuda.LongTensor)
-                    # zero the parameter gradients
-                    optimizer.zero_grad()
+                     with torch.enable_grad():
+                        # get the inputs
+                        inputs =  data[:,:-1]
+                        labels = data[:,-1].type(torch.cuda.LongTensor)
+                        # zero the parameter gradients
+                        optimizer.zero_grad()
 
-                    # forward + backward + optimize
-                    outputs = net(Variable(inputs)).squeeze()
-                    loss = criterion(outputs, labels)
-                    loss.backward()
-                    optimizer.step()
+                        # forward + backward + optimize
+                        outputs = net(Variable(inputs)).squeeze()
+                        loss = criterion(outputs, labels)
+                        loss.backward()
+                        optimizer.step()
 
-                    # print statistics
-                    running_loss += loss.item()
+                        # print statistics
+                        running_loss += loss.item()
                 if epoch % 20 == 19:    # print every 2000 mini-batches
                     print('[%d, %5d] loss: %.3f' %
                           (epoch + 1, i + 1, running_loss / 2000))
