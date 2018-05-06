@@ -20,9 +20,9 @@ def getAccuracy(net, X):
     outputs = net(inputs)
     _, predicted = torch.max(outputs, 1)
     totalCorrect = (predicted == labels).sum().data
-    totalSamples = labels.size()[0]
+    totalSamples = labels.data.size()[0]
 
-    accuracy = 100 * totalCorrect / totalSamples
+    accuracy = totalCorrect / totalSamples
     return accuracy
 
 def main():
@@ -79,7 +79,7 @@ def main():
             optimizer = optim.SGD(net.parameters(), lr=learning_rate, momentum=0.9)
 
             accuracyTrace =[]
-            logStep = 50
+            logStep = 10
             #TRAINING THE NETWORK
             for epoch in range(2000):  # loop over the dataset multiple times
 
