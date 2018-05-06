@@ -60,12 +60,13 @@ def main():
 
             Xtrain = np.hstack((Xtrain, Ttrain))
             Xtrain = torch.from_numpy(Xtrain).type(torch.cuda.FloatTensor)
-            trainloader = torch.utils.data.DataLoader(Xtrain, batch_size=batch_size, shuffle=True, num_workers=2)
+            trainloader = torch.utils.data.DataLoader(Xtrain, batch_size=batch_size, shuffle=True, num_workers=1)
 
 
             Xtest = np.hstack((Xtest, Ttest))
-            Xtest = torch.from_numpy(Xtest).type(torch.cuda.FloatTensor)
-            testloader = torch.utils.data.DataLoader(Xtest, batch_size=batch_size, shuffle=True, num_workers=2)
+            Xtest = torch.from_numpy(Xtest).type(torch.ls
+            cuda.FloatTensor)
+            testloader = torch.utils.data.DataLoader(Xtest, batch_size=batch_size, shuffle=True, num_workers=1)
 
 
             net = NNClassifier(window_size, num_topics)
