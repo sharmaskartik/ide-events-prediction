@@ -14,8 +14,8 @@ def display_topics(model, feature_names, no_top_words):
 # documents = dataset.data
 #
 # print(type(documents[0]))
-dir = "/home/kartik/playground/code/sem/project/dataset/main_windows/"
-
+dir = "../dataset/main_windows/"
+target_dir = "../dataset/topics/"
 files = [r"data_50.pickle", r"data_100.pickle", r"data_150.pickle", r"data_200.pickle"]
 for file in files:
     with open(dir+file, "rb") as input_file:
@@ -41,7 +41,7 @@ for file in files:
     no_topics = 50
 
     # Run LDA
-    lda = LatentDirichletAllocation(n_components=no_topics, max_iter=100, doc_topic_prior=0.2, topic_word_prior=1, learning_method='online', learning_offset=50.,random_state=0).fit(tf)
+    lda = LatentDirichletAllocation(n_components=no_topics, max_iter=1000, doc_topic_prior=0.3, topic_word_prior=.9, learning_method='online', learning_offset=50.,random_state=0).fit(tf)
 
     no_top_words = 10
     display_topics(lda, tf_feature_names, no_top_words)
@@ -50,11 +50,9 @@ for file in files:
 
     lda_Z = lda.fit_transform(tf)
     print(lda_Z.shape)  # (NO_DOCUMENTS, NO_TOPICS)
-    topics = np.argmax(lda_Z, axis = 1).reshape(-1,1)
-    print(topics[100:150,:])
 
     t = file.split(".")[0].split("_")[1]
-    with open(r"topics_"+t+".pickle", "wb") as output_file:
-        pickle.dump(topics, output_file)
+    with open(target_dir+r"topics_"+t+".pickle", "wb") as output_file:
+        pickle.dump(lda_Z, output_file)
     print("---------------------------------------------------------")
 #print(lda.score())

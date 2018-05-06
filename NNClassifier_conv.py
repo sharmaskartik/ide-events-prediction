@@ -2,16 +2,16 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-class NNFeedForward(nn.Module):
+class NNModelConv(nn.Module):
 
     def __init__(self, ni, no):
 
-        super(NNFeedForward, self).__init__()
+        super(NNModelConv, self).__init__()
 
         self.fc1 = nn.Linear(ni, 30)
         self.fc2 = nn.Linear(30, 30)
-        self.fc3 = nn.Linear(30, 30)
-        self.fc4 = nn.Linear(30, no)
+        self.fc3 = nn.Linear(30, 10)
+        self.fc4 = nn.Linear(10, no)
 
     def forward(self, x):
         x = F.relu(self.fc1(x))

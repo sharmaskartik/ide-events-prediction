@@ -224,10 +224,6 @@ for dateDir in listdir(dirPath):
 
 events = np.array(events)
 
-with open(r"vocabulary.pickle", "wb") as output_file:
-    pickle.dump(events[:,0], output_file)
-
-
 ## WE HAVE THE DATA HERE IN ONE ARRAY
 ## NOW WE HAVE TO CREATE SESSIONS
 
