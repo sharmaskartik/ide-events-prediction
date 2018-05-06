@@ -64,7 +64,7 @@ def main():
 
 
             Xtest = np.hstack((Xtest, Ttest))
-            Xtest = torch.from_numpy(Xtest).type(torch..cuda.FloatTensor)
+            Xtest = torch.from_numpy(Xtest).type(torch.cuda.FloatTensor)
             testloader = torch.utils.data.DataLoader(Xtest, batch_size=batch_size, shuffle=True, num_workers=2)
 
 
