@@ -94,7 +94,7 @@ def main():
 
                     # forward + backward + optimize
                     outputs = net(inputs)
-                    
+
                     loss = criterion(outputs, labels)
                     loss.backward()
                     optimizer.step()
@@ -106,7 +106,7 @@ def main():
                           (epoch + 1, i + 1, running_loss / logStep))
                     running_loss = 0.0
 
-                                
+
                     #for data in testloader:
                     trainAccuracy = getAccuracy(net, Xtrain)
                     testAccuracy = getAccuracy(net, Xtest)
@@ -115,5 +115,5 @@ def main():
             accuracyTrace = np.array(accuracyTrace).reshape(-1, 2)
 
             with open("accuracy_"+file+"_"+str(window_size)+".pickle", "wb") as output_file:
-                pickle.dump(topics, output_file)
+                pickle.dump(accuracyTrace, output_file)
 if __name__ == "__main__": main()
