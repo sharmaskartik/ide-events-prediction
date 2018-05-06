@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.utils.data
+from torch.autograd import Variable
 import numpy as np
 from random import randint
 import sys
@@ -60,16 +61,16 @@ def main():
 
             Xtrain = np.hstack((Xtrain, Ttrain))
             Xtrain = torch.from_numpy(Xtrain).type(torch.cuda.FloatTensor)
-            trainloader = torch.utils.data.DataLoader(Xtrain, batch_size=batch_size, shuffle=True, num_workers=1)
+            trainloader = torch.utils.data.DataLoader(Xtrain, batch_size=batch_size, shuffle=True, num_workers=0)
 
 
             Xtest = np.hstack((Xtest, Ttest))
             Xtest = torch.from_numpy(Xtest).type(torch.cuda.FloatTensor)
-            testloader = torch.utils.data.DataLoader(Xtest, batch_size=batch_size, shuffle=True, num_workers=1)
+            testloader = torch.utils.data.DataLoader(Xtest, batch_size=batch_size, shuffle=True, num_workers=0)
 
 
             net = NNClassifier(window_size, num_topics)
-
+            net = net.cuda()
             num_epochs = 5
             learning_rate = 0.001
 
@@ -78,10 +79,11 @@ def main():
             optimizer = optim.SGD(net.parameters(), lr=learning_rate, momentum=0.9)
 
             accuracyTrace =[]
-
+            
+            
             #TRAINING THE NETWORK
             for epoch in range(2000):  # loop over the dataset multiple times
-
+            
                 running_loss = 0.0
                 for i, data in enumerate(trainloader, 0):
                     # get the inputs
@@ -91,7 +93,7 @@ def main():
                     optimizer.zero_grad()
 
                     # forward + backward + optimize
-                    outputs = net(inputs).squeeze()
+                    outputs = net(Variable(inputs)).squeeze()
                     loss = criterion(outputs, labels)
                     loss.backward()
                     optimizer.step()
