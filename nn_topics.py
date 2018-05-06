@@ -30,7 +30,7 @@ def main():
     files = [r"topics_50.pickle", r"topics_100.pickle", r"topics_150.pickle", r"topics_200.pickle"]
     for file in files:
 
-        window_sizes = [1] #[1 , 3, 5]
+        window_sizes = [1 , 3, 5]
 
         for window_size in window_sizes:
             with open(r"topics_50.pickle", "rb") as input_file:
@@ -59,12 +59,12 @@ def main():
             Xtrain, Ttrain, Xtest, Ttest = ml.partition(X,T,[0.8, 0.2],shuffle=True, classification=True)
 
             Xtrain = np.hstack((Xtrain, Ttrain))
-            Xtrain = torch.from_numpy(Xtrain).type(torch.FloatTensor)
+            Xtrain = torch.from_numpy(Xtrain).type(torch.cuda.FloatTensor)
             trainloader = torch.utils.data.DataLoader(Xtrain, batch_size=batch_size, shuffle=True, num_workers=2)
 
 
             Xtest = np.hstack((Xtest, Ttest))
-            Xtest = torch.from_numpy(Xtest).type(torch.FloatTensor)
+            Xtest = torch.from_numpy(Xtest).type(torch..cuda.FloatTensor)
             testloader = torch.utils.data.DataLoader(Xtest, batch_size=batch_size, shuffle=True, num_workers=2)
 
 
@@ -86,7 +86,7 @@ def main():
                 for i, data in enumerate(trainloader, 0):
                     # get the inputs
                     inputs =  data[:,:-1]
-                    labels = data[:,-1].type(torch.LongTensor)
+                    labels = data[:,-1].type(torch.cuda.LongTensor)
                     # zero the parameter gradients
                     optimizer.zero_grad()
 
