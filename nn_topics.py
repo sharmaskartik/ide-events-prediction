@@ -15,11 +15,11 @@ def getAccuracy(net, X):
     totalSamples = 0
     totalCorrect = 0
 
-    inputs = X[:,:-1]
-    labels = X[:,-1].type(torch.LongTensor)
+    inputs = Variable(X[:,:-1], requires_grad=True)
+    labels = Variable(X[:,-1].type(torch.cuda.LongTensor))
     outputs = net(inputs)
     _, predicted = torch.max(outputs, 1)
-    totalCorrect = (predicted == labels).sum()
+    totalCorrect = (predicted == labels).sum().data
     totalSamples = labels.size()[0]
 
     accuracy = 100 * totalCorrect / totalSamples
@@ -28,13 +28,13 @@ def getAccuracy(net, X):
 def main():
 
     #files = [r"topics_50.pickle", r"topics_100.pickle", r"topics_150.pickle", r"topics_200.pickle"]
-    files = [r"topics_50.pickle", r"topics_100.pickle", r"topics_150.pickle", r"topics_200.pickle"]
+    files = ["50", "100", "150", "200"]
     for file in files:
 
         window_sizes = [1 , 3, 5]
 
         for window_size in window_sizes:
-            with open(r"topics_50.pickle", "rb") as input_file:
+            with open(r"topics_"+file+".pickle", "rb") as input_file:
                 topics = pickle.load(input_file)
 
             topics = topics.flatten()
@@ -79,42 +79,41 @@ def main():
             optimizer = optim.SGD(net.parameters(), lr=learning_rate, momentum=0.9)
 
             accuracyTrace =[]
-
+            logStep = 50
             #TRAINING THE NETWORK
             for epoch in range(2000):  # loop over the dataset multiple times
 
                 running_loss = 0.0
                 for i, data in enumerate(trainloader, 0):
-                     with torch.enable_grad():
-                        # get the inputs
-                        inputs =  data[:,:-1]
-                        labels = data[:,-1].type(torch.cuda.LongTensor)
-                        # zero the parameter gradients
-                        optimizer.zero_grad()
 
-                        # forward + backward + optimize
-                        outputs = net(Variable(inputs)).squeeze()
-                        loss = criterion(outputs, labels)
-                        loss.backward()
-                        optimizer.step()
+                    # get the inputs
+                    inputs =  Variable(data[:,:-1], requires_grad=True)
+                    labels = Variable(data[:,-1].type(torch.cuda.LongTensor))
+                    # zero the parameter gradients
+                    optimizer.zero_grad()
 
-                        # print statistics
-                        running_loss += loss.item()
-                if epoch % 20 == 19:    # print every 2000 mini-batches
+                    # forward + backward + optimize
+                    outputs = net(inputs)
+                    
+                    loss = criterion(outputs, labels)
+                    loss.backward()
+                    optimizer.step()
+
+                    # print statistics
+                    running_loss += loss.data
+                if epoch % logStep == logStep - 1:    # print every 2000 mini-batches
                     print('[%d, %5d] loss: %.3f' %
-                          (epoch + 1, i + 1, running_loss / 2000))
+                          (epoch + 1, i + 1, running_loss / logStep))
                     running_loss = 0.0
 
-
-
-                    with torch.no_grad():
-                        #for data in testloader:
-                        trainAccuracy = getAccuracy(net, Xtrain)
-                        testAccuracy = getAccuracy(net, Xtest)
-                        accuracyTrace.append([trainAccuracy,testAccuracy])
+                                
+                    #for data in testloader:
+                    trainAccuracy = getAccuracy(net, Xtrain)
+                    testAccuracy = getAccuracy(net, Xtest)
+                    accuracyTrace.append([trainAccuracy,testAccuracy])
 
             accuracyTrace = np.array(accuracyTrace).reshape(-1, 2)
 
-            with open(filename+".accuracy"+"."+str(window_size), "wb") as output_file:
+            with open("accuracy_"+file+"_"+str(window_size)+".pickle", "wb") as output_file:
                 pickle.dump(topics, output_file)
 if __name__ == "__main__": main()
