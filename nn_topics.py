@@ -53,9 +53,10 @@ def main():
                 topics = pickle.load(input_file)
 
             X = rollingWindows(topics, window_size)
-
+            T = X[1:,0]
+            X = X[1:,:]
             print(X.shape)
-
+            continue
             # MAIN CODE STARTS HERE
             # MAKE SURE THAT T CONTAINS TARGETS AS LABELS BETWEEN 0  AND num_topics-1
             classes = list(np.unique(T))
