@@ -1,0 +1,769 @@
+working on :data_50.pickle
+Topic: 0
+commandevent_show_on_code_map commandevent_0_of_31_messages commandevent_31_messages messages 2212 showitem codemap a9f6 b7f0 7951e11d8386
+Topic: 1
+commandevent_manage_connections commandevent_connect_to_team_project othercontextmenus tfsteamexplorer commandevent_team_explorer e234e66e 4d71 16f0a4c793f5 ba64 b304
+Topic: 2
+commandevent_source_control_explorer debuggerevent_break_dbgeventreasonexceptionthrowndbgexecutionactiondefault debuggerevent_exceptionthrown_system url io quickinfo aa7d e8b06f44 00c04f990343 6d01
+Topic: 3
+commandevent_close usenullpropagationfix findallreferences bodystatementtoexpressionfix peekdefinition commandevent_peek_definition 2a8866dc a360 a60679534384 4dc8
+Topic: 4
+commandevent_check__in pendingchangespagechangestoexclude tfscontextpendingchangespageincludechanges 6352 commandevent_bulbmenu switchtogotoaction pausecontinue commandevent_la424 specificprofilecleanupselectionaction commandevent_errorsview
+Topic: 5
+commandevent_sync_with_active_document_ _s ctrl syncwithactivedocument 36 solutionexplorer d63db1f0 4b21 9648 ca8d99245ec3
+Topic: 6
+view objectbrowsingscope commandevent_vsaction commandevent_1_warning navigationevent_click navigatebackward 809 commandevent_navigate_backward startwithoutdebugging 368
+Topic: 7
+enter alt commandevent_properties_ overtypemode breakline 57 commandevent_completecodebasic completeword expand_typeof completionevent_applied
+Topic: 8
+commandevent_pending_changes pendingchangespagemorelink commandevent_google_chrome commandevent_solutionbuilderrestorenugetactions commandevent_solbuildeventsshowwarningsactions commandevent_undo commandevent_open commandevent_compare_with_latest_version tfscontextpendingchangespageview nextoccurrence
+Topic: 9
+commandevent_clear_all versioncontrolevent_pull versioncontrolevent_rebasefinished versioncontrolevent_checkout versioncontrolevent_commit commandevent_view_details commandevent_closebutton versioncontrolevent_reset versioncontrolevent_merge quickwatch
+Topic: 10
+edit commandevent_vsaction linedown commandevent_textcontrol lineup linedownextend breakline lineupextend navigationevent_keyboard commandevent_completecodebasic
+Topic: 11
+edit commandevent_vsaction delete commandevent_textcontrol deletebackwards backspace editevent_ 17 charright charleft
+Topic: 12
+commandevent_show_all_files commandevent_rest_art showallfiles 600 idestateevent_shutdown tfsshelvependingchanges idestateevent_startup commandevent_update_bootstrap_to_version_3 commandevent_manage_nuget_packages managenugetpackages
+Topic: 13
+commandevent_0_of_5_messages messages 2212 warnings 2211 activityevent_ commandevent_ 11d0 8c3f 1496a755
+Topic: 14
+cut 16 tools redo submain documentthis ghostdoc lineendextend commandevent_settings 29
+Topic: 15
+commandevent_uninstall functionbreakpoint 311 feedbackgenerator uploadwizard vs editevent_ windowevent_move commandevent_kave windowevent_activate
+Topic: 16
+file 11cf 9b2b 5efc7975 00aa00573819 14bc commandevent_ saveselecteditems commandevent_vsaction saveall
+Topic: 17
+commandevent_edit_publish_profiles buildevent_vsbuildscopeproject_vsbuildactionbuild windowevent_deactivate activityevent_ editevent_ windowevent_activate commandevent_google_chrome breakline commandevent_ 278
+Topic: 18
+edit paste commandevent_vsaction commandevent_ 14bc 00aa00573819 5efc7975 11cf 9b2b copy
+Topic: 19
+commandevent_view_exception_details commandevent_switch_to_replace_in_files commandevent_connect_your_app_to_the_application_insights_service buildevent_vsbuildscopeproject_vsbuildactionbuild nullreferenceexceptiondbgexceptionactiondefault debuggerevent_ignorexceptionnothandleded_system debuggerevent_break_dbgeventreasonexceptionnothandleddbgexecutionactiondefault activityevent_ windowevent_move commandevent_extensionmanager
+Topic: 20
+commandevent_back commandevent_selectpartbutton commandevent_delete selection 2aee 8bfb 74d21313 4097 00a0c90f26f7 11d1
+Topic: 21
+documentevent_closing windowevent_close windowevent_activate commandevent_vsaction commandevent_ documentevent_saved teamfoundationcontextmenus pendingchangespagechangestoinclude solutionevent_closesolution windowevent_create
+Topic: 22
+commandevent_71_messages commandevent_bulbaction resharper jetbrains intentions quickfixes csharp contextactions scoped commandevent_altenter
+Topic: 23
+windowevent_activate activityevent_ windowevent_move windowevent_deactivate editevent_ navigationevent_click windowevent_create documentevent_opened idestateevent_startup commandevent_vsaction
+Topic: 24
+commandevent_refresh commandevent_0_of_1_warning warnings 2211 refresh 222 windowevent_deactivate commandevent_extensions_and_updates solutionexplorer extensionsandupdates
+Topic: 25
+commandevent_0_of_71_messages commandevent_1_error commandevent_update_bootstrap_to_version_3 t_show_this_tip_again commandevent_don commandevent_featuresuggestion messages errors commandevent_manage_nuget_packages managenugetpackages
+Topic: 26
+commandevent_collapse_all currentview ab257498ffeb 8a7f 300a8877 4385 b214 8714 removeselected commandevent_optimizereferences
+Topic: 27
+debug commandevent_ commandevent_vsaction start startdebugtarget 14bc 00aa00573819 5efc7975 9b2b 11cf
+Topic: 28
+commandevent_publish_web commandevent_11_warnings commandevent_0_of_11_warnings warnings 2211 dockastabbeddocument configurationmanager commandevent_showsettingslayersdialog 290 commandevent_showoptions
+Topic: 29
+commandevent_promote_to_document versioncontrolevent_rebase commandevent_part_additionalfunctionalitybutton commandevent_copy versioncontrolevent_reset 882 navigationevent_click copy build activityevent_
+Topic: 30
+commandevent_she_lve peekdefinition a360 2a8866dc 7bde 4dc8 a60679534384 commandevent_peek_definition tfsshelvependingchanges vsfeedbackgenerator
+Topic: 31
+commandevent_clear_screen classviewcontextmenus build classviewproject properties classviewmultiselectprojectreferencesitems commandevent_open_project rebuild commandevent_properties 397
+Topic: 32
+commandevent_undock_from_team_explorer findnext 370 findprevious 371 97 togglebookmark easymditoolwindow closeallbutpinned 76
+Topic: 33
+locationtoolbar debug processcombo 83e7 00c04f9902c1 11d2 47fb c9dd4a59 commandevent_ commandevent_vsaction
+Topic: 34
+commandevent_update editevent_ windowevent_move windowevent_activate activityevent_ commandevent_copy 256 commandevent_vsaction managenugetpackages commandevent_
+Topic: 35
+commandevent_install commandevent__labelbutton commandevent_update_webactivatorex_to_version_2 commandevent_manage_nuget_packages_for_solution managenugetpackagesforsolution 512 systemevent_lock bulbs respeller editevent_
+Topic: 36
+commandevent_skip_line_and_ignore_this_exception setnextstatement 258 nullreferenceexceptiondbgexceptionactiondefault debuggerevent_break_15dbgexecutionactiondefault debuggerevent_ignorexceptionnothandleded_system debuggerevent_break_dbgeventreasonexceptionnothandleddbgexecutionactiondefault uriformatexceptiondbgexceptionactiondefault navigationevent_click debuggerevent_run_dbgeventreasongo
+Topic: 37
+11cf 9b2b 5efc7975 14bc 00aa00573819 commandevent_ edit commandevent_vsaction undo 43
+Topic: 38
+commandevent_unknown_button commandevent_update_webactivatorex_to_version_2 commandevent_runinspection commandevent_currentconfigrunalt commandevent__restore navigationevent_ctrlclick commandevent_gotoimplementations errors warnings commandevent_altenter
+Topic: 39
+navigationevent_keyboard editevent_ completionevent_filtered commandevent_completion automatic_code_completion commandevent_textcontrol completionevent_applied completionevent_cancelled breakline commandevent_postfixtemplates
+Topic: 40
+debug startupprojects commandevent_vsaction commandevent_ 1280 6e87cfad 6c05 4adf 3b7943875b7c 9cd7
+Topic: 41
+commandevent_home commandevent_findusages home 31 solutionexplorer 4b21 404e d63db1f0 ca8d99245ec3 9648
+Topic: 42
+commandevent_5_messages messages 2212 windowevent_deactivate activityevent_ windowevent_activate commandevent_ commandevent_vsaction 11d0 8c3f
+Topic: 43
+commandevent_properties_ alt enter codemap showitem b7f0 7951e11d8386 a9f6 classviewmultiselectprojectreferencesitems 397
+Topic: 44
+mercurial pendingtask commandevent_vsaction commandevent_ 3000 896e a7f26ca1 0bbe9e380635 4729 336
+Topic: 45
+debug threadcombo stackframecombo commandevent_vsaction commandevent_ 280 288 stepover 11cf 9b2b
+Topic: 46
+commandevent_search windowevent_deactivate tfsgetlatestversion 21010 commandevent_get_latest_version zoom architecturedesigner url 207 commandevent_modified_extensions
+Topic: 47
+edit commandevent_vsaction commandevent_ 94de 00c04fc2aae2 1496a755 8c3f 11d0 selectioncancel lineend
+Topic: 48
+worddeletetostart project 92 editlabel commandevent_0_of_39_warnings addnewitem newfolder 338 addreference addexistingitem
+Topic: 49
+commandevent_0_of_2_warnings commandevent_9_errors warnings 2211 errors 2210 commandevent_moveintomatchingfiles analyze buildevent_vsbuildscopeproject_vsbuildactionclean 895
+(30948, 50)
+[[25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]]
+Traceback (most recent call last):
+  File "lda.py", line 56, in <module>
+    t = file.split(".")[0].spilt("_")[1]
+AttributeError: 'str' object has no attribute 'spilt'
+kartik@kartik:~/playground/code/sem/project/code$ python lda.py
+working on :data_50.pickle
+Topic: 0
+commandevent_show_on_code_map commandevent_0_of_31_messages commandevent_31_messages messages 2212 showitem codemap a9f6 b7f0 7951e11d8386
+Topic: 1
+commandevent_manage_connections commandevent_connect_to_team_project othercontextmenus tfsteamexplorer commandevent_team_explorer e234e66e 4d71 16f0a4c793f5 ba64 b304
+Topic: 2
+commandevent_source_control_explorer debuggerevent_break_dbgeventreasonexceptionthrowndbgexecutionactiondefault debuggerevent_exceptionthrown_system url io quickinfo aa7d e8b06f44 00c04f990343 6d01
+Topic: 3
+commandevent_close usenullpropagationfix findallreferences bodystatementtoexpressionfix peekdefinition commandevent_peek_definition 2a8866dc a360 a60679534384 4dc8
+Topic: 4
+commandevent_check__in pendingchangespagechangestoexclude tfscontextpendingchangespageincludechanges 6352 commandevent_bulbmenu switchtogotoaction pausecontinue commandevent_la424 specificprofilecleanupselectionaction commandevent_errorsview
+Topic: 5
+commandevent_sync_with_active_document_ _s ctrl syncwithactivedocument 36 solutionexplorer d63db1f0 4b21 9648 ca8d99245ec3
+Topic: 6
+view objectbrowsingscope commandevent_vsaction commandevent_1_warning navigationevent_click navigatebackward 809 commandevent_navigate_backward startwithoutdebugging 368
+Topic: 7
+enter alt commandevent_properties_ overtypemode breakline 57 commandevent_completecodebasic completeword expand_typeof completionevent_applied
+Topic: 8
+commandevent_pending_changes pendingchangespagemorelink commandevent_google_chrome commandevent_solutionbuilderrestorenugetactions commandevent_solbuildeventsshowwarningsactions commandevent_undo commandevent_open commandevent_compare_with_latest_version tfscontextpendingchangespageview nextoccurrence
+Topic: 9
+commandevent_clear_all versioncontrolevent_pull versioncontrolevent_rebasefinished versioncontrolevent_checkout versioncontrolevent_commit commandevent_view_details commandevent_closebutton versioncontrolevent_reset versioncontrolevent_merge quickwatch
+Topic: 10
+edit commandevent_vsaction linedown commandevent_textcontrol lineup linedownextend breakline lineupextend navigationevent_keyboard commandevent_completecodebasic
+Topic: 11
+edit commandevent_vsaction delete commandevent_textcontrol deletebackwards backspace editevent_ 17 charright charleft
+Topic: 12
+commandevent_show_all_files commandevent_rest_art showallfiles 600 idestateevent_shutdown tfsshelvependingchanges idestateevent_startup commandevent_update_bootstrap_to_version_3 commandevent_manage_nuget_packages managenugetpackages
+Topic: 13
+commandevent_0_of_5_messages messages 2212 warnings 2211 activityevent_ commandevent_ 11d0 8c3f 1496a755
+Topic: 14
+cut 16 tools redo submain documentthis ghostdoc lineendextend commandevent_settings 29
+Topic: 15
+commandevent_uninstall functionbreakpoint 311 feedbackgenerator uploadwizard vs editevent_ windowevent_move commandevent_kave windowevent_activate
+Topic: 16
+file 11cf 9b2b 5efc7975 00aa00573819 14bc commandevent_ saveselecteditems commandevent_vsaction saveall
+Topic: 17
+commandevent_edit_publish_profiles buildevent_vsbuildscopeproject_vsbuildactionbuild windowevent_deactivate activityevent_ editevent_ windowevent_activate commandevent_google_chrome breakline commandevent_ 278
+Topic: 18
+edit paste commandevent_vsaction commandevent_ 14bc 00aa00573819 5efc7975 11cf 9b2b copy
+Topic: 19
+commandevent_view_exception_details commandevent_switch_to_replace_in_files commandevent_connect_your_app_to_the_application_insights_service buildevent_vsbuildscopeproject_vsbuildactionbuild nullreferenceexceptiondbgexceptionactiondefault debuggerevent_ignorexceptionnothandleded_system debuggerevent_break_dbgeventreasonexceptionnothandleddbgexecutionactiondefault activityevent_ windowevent_move commandevent_extensionmanager
+Topic: 20
+commandevent_back commandevent_selectpartbutton commandevent_delete selection 2aee 8bfb 74d21313 4097 00a0c90f26f7 11d1
+Topic: 21
+documentevent_closing windowevent_close windowevent_activate commandevent_vsaction commandevent_ documentevent_saved teamfoundationcontextmenus pendingchangespagechangestoinclude solutionevent_closesolution windowevent_create
+Topic: 22
+commandevent_71_messages commandevent_bulbaction resharper jetbrains intentions quickfixes csharp contextactions scoped commandevent_altenter
+Topic: 23
+windowevent_activate activityevent_ windowevent_move windowevent_deactivate editevent_ navigationevent_click windowevent_create documentevent_opened idestateevent_startup commandevent_vsaction
+Topic: 24
+commandevent_refresh commandevent_0_of_1_warning warnings 2211 refresh 222 windowevent_deactivate commandevent_extensions_and_updates solutionexplorer extensionsandupdates
+Topic: 25
+commandevent_0_of_71_messages commandevent_1_error commandevent_update_bootstrap_to_version_3 t_show_this_tip_again commandevent_don commandevent_featuresuggestion messages errors commandevent_manage_nuget_packages managenugetpackages
+Topic: 26
+commandevent_collapse_all currentview ab257498ffeb 8a7f 300a8877 4385 b214 8714 removeselected commandevent_optimizereferences
+Topic: 27
+debug commandevent_ commandevent_vsaction start startdebugtarget 14bc 00aa00573819 5efc7975 9b2b 11cf
+Topic: 28
+commandevent_publish_web commandevent_11_warnings commandevent_0_of_11_warnings warnings 2211 dockastabbeddocument configurationmanager commandevent_showsettingslayersdialog 290 commandevent_showoptions
+Topic: 29
+commandevent_promote_to_document versioncontrolevent_rebase commandevent_part_additionalfunctionalitybutton commandevent_copy versioncontrolevent_reset 882 navigationevent_click copy build activityevent_
+Topic: 30
+commandevent_she_lve peekdefinition a360 2a8866dc 7bde 4dc8 a60679534384 commandevent_peek_definition tfsshelvependingchanges vsfeedbackgenerator
+Topic: 31
+commandevent_clear_screen classviewcontextmenus build classviewproject properties classviewmultiselectprojectreferencesitems commandevent_open_project rebuild commandevent_properties 397
+Topic: 32
+commandevent_undock_from_team_explorer findnext 370 findprevious 371 97 togglebookmark easymditoolwindow closeallbutpinned 76
+Topic: 33
+locationtoolbar debug processcombo 83e7 00c04f9902c1 11d2 47fb c9dd4a59 commandevent_ commandevent_vsaction
+Topic: 34
+commandevent_update editevent_ windowevent_move windowevent_activate activityevent_ commandevent_copy 256 commandevent_vsaction managenugetpackages commandevent_
+Topic: 35
+commandevent_install commandevent__labelbutton commandevent_update_webactivatorex_to_version_2 commandevent_manage_nuget_packages_for_solution managenugetpackagesforsolution 512 systemevent_lock bulbs respeller editevent_
+Topic: 36
+commandevent_skip_line_and_ignore_this_exception setnextstatement 258 nullreferenceexceptiondbgexceptionactiondefault debuggerevent_break_15dbgexecutionactiondefault debuggerevent_ignorexceptionnothandleded_system debuggerevent_break_dbgeventreasonexceptionnothandleddbgexecutionactiondefault uriformatexceptiondbgexceptionactiondefault navigationevent_click debuggerevent_run_dbgeventreasongo
+Topic: 37
+11cf 9b2b 5efc7975 14bc 00aa00573819 commandevent_ edit commandevent_vsaction undo 43
+Topic: 38
+commandevent_unknown_button commandevent_update_webactivatorex_to_version_2 commandevent_runinspection commandevent_currentconfigrunalt commandevent__restore navigationevent_ctrlclick commandevent_gotoimplementations errors warnings commandevent_altenter
+Topic: 39
+navigationevent_keyboard editevent_ completionevent_filtered commandevent_completion automatic_code_completion commandevent_textcontrol completionevent_applied completionevent_cancelled breakline commandevent_postfixtemplates
+Topic: 40
+debug startupprojects commandevent_vsaction commandevent_ 1280 6e87cfad 6c05 4adf 3b7943875b7c 9cd7
+Topic: 41
+commandevent_home commandevent_findusages home 31 solutionexplorer 4b21 404e d63db1f0 ca8d99245ec3 9648
+Topic: 42
+commandevent_5_messages messages 2212 windowevent_deactivate activityevent_ windowevent_activate commandevent_ commandevent_vsaction 11d0 8c3f
+Topic: 43
+commandevent_properties_ alt enter codemap showitem b7f0 7951e11d8386 a9f6 classviewmultiselectprojectreferencesitems 397
+Topic: 44
+mercurial pendingtask commandevent_vsaction commandevent_ 3000 896e a7f26ca1 0bbe9e380635 4729 336
+Topic: 45
+debug threadcombo stackframecombo commandevent_vsaction commandevent_ 280 288 stepover 11cf 9b2b
+Topic: 46
+commandevent_search windowevent_deactivate tfsgetlatestversion 21010 commandevent_get_latest_version zoom architecturedesigner url 207 commandevent_modified_extensions
+Topic: 47
+edit commandevent_vsaction commandevent_ 94de 00c04fc2aae2 1496a755 8c3f 11d0 selectioncancel lineend
+Topic: 48
+worddeletetostart project 92 editlabel commandevent_0_of_39_warnings addnewitem newfolder 338 addreference addexistingitem
+Topic: 49
+commandevent_0_of_2_warnings commandevent_9_errors warnings 2211 errors 2210 commandevent_moveintomatchingfiles analyze buildevent_vsbuildscopeproject_vsbuildactionclean 895
+(30948, 50)
+[[25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]
+ [25]]
+---------------------------------------------------------
+working on :data_100.pickle
+Topic: 0
+edit paste 00aa00573819 11cf 14bc 9b2b 5efc7975 commandevent_ commandevent_vsaction copy
+Topic: 1
+start commandevent_promote_to_document debug startdebugtarget 295 257 debuggerevent_run_dbgeventreasongo debuggerevent_break_dbgeventreasonbreakpointdbgexecutionactiondefault commandevent_continue stopdebugging
+Topic: 2
+enter commandevent_properties_ alt breakline overtypemode systemevent_unlock expand_typeof 57 commandevent_completecodebasic completeword
+Topic: 3
+commandevent_show_all_files showallfiles 600 project buildevent_vsbuildscopeproject_vsbuildactionbuild activityevent_ documentevent_saved windowevent_deactivate classviewmultiselectprojectreferencesitems 397
+Topic: 4
+commandevent_clear_all debuggercontextmenus gputhreadswindowshortcutmenu showthreadipindicators tfsteamexplorer commandevent_excludenodes 16400 commandevent_show_threads_in_source 346 ba64
+Topic: 5
+commandevent_refresh commandevent_0_of_1_warning refresh warnings 222 2211 solutionexplorer commandevent_gotonexterrorinsolution windowevent_deactivate 36
+Topic: 6
+commandevent_0_of_11_warnings project teamfoundationcontextmenus commandevent_vsaction classviewcontextmenus commandevent_ pendingchangespagechangestoinclude 9728 8ea1 4d05
+Topic: 7
+windowevent_activate activityevent_ windowevent_move editevent_ windowevent_deactivate documentevent_closing windowevent_close windowevent_create documentevent_opened navigationevent_click
+Topic: 8
+commandevent_update editevent_ commandevent_optimizereferences windowevent_activate windowevent_move activityevent_ commandevent_copy commandevent_vsaction commandevent_ 1280
+Topic: 9
+debug startupprojects commandevent_ commandevent_vsaction 3b7943875b7c 6c05 6e87cfad 4adf 9cd7 1280
+Topic: 10
+commandevent_install commandevent__labelbutton selectall 31 commandevent_solbuildeventsshowwarningsactions windowevent_deactivate editevent_ worddeletetoend coverselected 91
+Topic: 11
+alt commandevent_properties_ enter classviewmultiselectprojectreferencesitems 397 properties classviewcontextmenus windowevent_activate codemap showitem
+Topic: 12
+commandevent_show_on_code_map showitem codemap scopetothis ddc7e0df 22037 b7f0 7951e11d8386 a9f6 4a8b
+Topic: 13
+edit commandevent_vsaction linedown commandevent_textcontrol lineup linedownextend breakline charleft linestart charright
+Topic: 14
+edit commandevent_vsaction delete commandevent_textcontrol 17 charright charleft editevent_ backspace charrightextend
+Topic: 15
+commandevent_pending_changes commandevent_google_chrome commandevent_solutionbuilderrestorenugetactions commandevent_solbuildeventsshowwarningsactions connections pageup tfsteamexplorer commandevent_team_explorer commandevent_treemodelbrowser pendingchangespagemorelink
+Topic: 16
+commandevent_5_messages messages 2212 windowevent_deactivate activityevent_ charrightextend windowevent_activate commandevent_ 1496a755 11d0
+Topic: 17
+commandevent_view_exception_details nullreferenceexceptiondbgexceptionactiondefault debuggerevent_ignorexceptionnothandleded_system debuggerevent_break_dbgeventreasonexceptionnothandleddbgexecutionactiondefault navigationevent_click windowevent_move activityevent_ 288 stackframecombo windowevent_activate
+Topic: 18
+commandevent_0_of_71_messages messages 2212 windowevent_deactivate tfscontextcompare classviewitem 21507 commandevent_compare 5bf14e63 b20b
+Topic: 19
+view objectbrowsingscope commandevent_vsaction commandevent_1_error navigationevent_click navigatebackward commandevent_navigate_backward 809 startwithoutdebugging navigationevent_keyboard
+Topic: 20
+debug locationtoolbar commandevent_vsaction commandevent_ threadcombo stackframecombo c9dd4a59 47fb 83e7 00c04f9902c1
+Topic: 21
+commandevent_back commandevent_settings scopetothis propertieswindow selection commandevent_copy 38 commandevent_findcodeissues commandevent_find_code_issues 235
+Topic: 22
+commandevent_collapse_all collapseall f1help 29 startpage wscommontransfers help src sln commandevent_1_c
+Topic: 23
+commandevent_0_of_2_warnings commandevent_edit_publish_profiles warnings 2211 commandevent_solution_configurations buildevent_vsbuildscopeproject_vsbuildactionbuild show_gotosuggester commandevent_featuresuggestion windowevent_deactivate activityevent_
+Topic: 24
+commandevent_manage_connections commandevent_connect_to_team_project tfsteamexplorer ba64 e234e66e 4d71 b304 16f0a4c793f5 commandevent_team_explorer 16400
+Topic: 25
+commandevent_skip_line_and_ignore_this_exception commandevent_0_of_39_warnings setnextstatement nullreferenceexceptiondbgexceptionactiondefault 258 debuggerevent_ignorexceptionnothandleded_system debuggerevent_break_15dbgexecutionactiondefault debuggerevent_break_dbgeventreasonexceptionnothandleddbgexecutionactiondefault warnings debuggerevent_run_dbgeventreasongo
+Topic: 26
+locationtoolbar debug processcombo 11d2 00c04f9902c1 83e7 47fb c9dd4a59 commandevent_vsaction commandevent_
+Topic: 27
+commandevent_bulbaction resharper jetbrains intentions quickfixes editevent_ csharp activityevent_ navigationevent_click commandevent_altenter
+Topic: 28
+commandevent_search commandevent_structuralnavigation zoom architecturedesigner windowevent_deactivate config cleansolution rebuildsolution buildevent_vsbuildscopesolution_vsbuildactionclean 885
+Topic: 29
+commandevent_0_of_5_messages messages 2212 activityevent_ warnings 2211 1496a755 11d0 8c3f 00c04fc2aae2
+Topic: 30
+commandevent_home commandevent_findusages home 31 classviewprojectrebuild solutionexplorer 4b21 404e ca8d99245ec3 d63db1f0
+Topic: 31
+commandevent_check__in open 261 publish 2006 commandevent_publish commandevent_open exit solutionevent_closesolution switchtogotoaction
+Topic: 32
+navigationevent_keyboard commandevent_textcontrol editevent_ commandevent_vsaction edit completionevent_filtered automatic_code_completion commandevent_completion deletebackwards backspace
+Topic: 33
+mercurial pendingtask commandevent_vsaction commandevent_ 3000 a7f26ca1 0bbe9e380635 896e 4729 336
+Topic: 34
+00aa00573819 11cf 14bc 9b2b 5efc7975 commandevent_ edit commandevent_vsaction undo cut
+Topic: 35
+edit commandevent_vsaction commandevent_ 94de 00c04fc2aae2 8c3f 11d0 1496a755 selectioncancel lineend
+Topic: 36
+commandevent_unknown_button commandevent_runinspection commandevent_pullup errorlist warnings commandevent_copy 2211 dockastabbeddocument commandevent_delete 320
+Topic: 37
+commandevent_she_lve commandevent_switch_to_replace_in_files selectall 31 movetoouterscopeaction invertifaction specificprofilecleanupselectionaction tfscontextpendingchangespageview activityevent_ 6357
+Topic: 38
+commandevent_sync_with_active_document_ ctrl _s commandevent_clear_screen interactiveconsole 4970 00b8868b a048 f9f5 410b05508506
+Topic: 39
+commandevent_31_messages commandevent_selectpartbutton commandevent_analyzereferences removeselected commandevent_optimizereferences commandevent_findcodeissues commandevent_find_code_issues commandevent_moveintomatchingfiles commandevent_togglepreview adjustnamespaces
+Topic: 40
+file 5efc7975 00aa00573819 14bc 9b2b 11cf commandevent_ commandevent_vsaction saveselecteditems saveall
+Topic: 41
+commandevent_publish_web commandevent_connect_your_app_to_the_application_insights_service worddeletetoend 91 buildevent_vsbuildscopeproject_vsbuildactionbuild commandevent_showsettingslayersdialog exit solutionevent_closesolution editevent_ commandevent_solbuilderduo
+Topic: 42
+commandevent_11_warnings peekdefinition commandevent_showoptions a360 2a8866dc 4dc8 7bde a60679534384 commandevent_peek_definition commandevent_parameterinfo
+Topic: 43
+commandevent_71_messages messages 2212 windowevent_deactivate commandevent_google_chrome build commandevent_currentconfigdebug debuggerevent_run_dbgeventreasonlaunchprogram commandevent_stop_debugging debuggerevent_design_dbgeventreasonstopdebugging
+Topic: 44
+commandevent_0_of_31_messages currentview b214 300a8877 8a7f ab257498ffeb 4385 8714 messages 2212
+Topic: 45
+commandevent_uninstall commandevent_source_control_explorer team commandevent_projectelementbuildstate clean functionbreakpoint commandevent_connect_to_team_project sourcecontrolexplorer classviewprojectbuild xml
+Topic: 46
+commandevent_rest_art versioncontrolevent_pull versioncontrolevent_rebasefinished versioncontrolevent_checkout findnext versioncontrolevent_commit tools 370 commandevent_update_bootstrap_to_version_3 versioncontrolevent_reset
+Topic: 47
+commandevent_9_errors commandevent_1_warning warnings errors 2211 solutionexplorer refresh 2210 222 analyze
+Topic: 48
+commandevent_undock_from_team_explorer windowevent_deactivate activityevent_ windowevent_activate windowevent_move commandevent_check__in editevent_ commandevent_vsaction commandevent_ navigationevent_click
+Topic: 49
+commandevent_close commandevent_go_to_definition gotodefinition 935 commandevent_gotodeclaration findallreferences commandevent_cleanup_code commandevent_find_all_references 1915 peekdefinition
+(15383, 50)
+[[36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]
+ [36]]
+---------------------------------------------------------
+working on :data_150.pickle
+Topic: 0
+commandevent_home commandevent_findusages home windowevent_deactivate documentevent_saved activityevent_ classviewprojectrebuild solutionexplorer 31 ca8d99245ec3
+Topic: 1
+commandevent_manage_connections commandevent_connect_to_team_project ba64 b304 4d71 16f0a4c793f5 e234e66e team options commandevent_options
+Topic: 2
+commandevent_pending_changes commandevent_rename connections xml commandevent_stop_debugging commandevent_modified_extensions commandevent_google_chrome stopdebugging debuggerevent_design_dbgeventreasonstopdebugging 179
+Topic: 3
+commandevent_refresh commandevent_0_of_1_warning warnings 2211 refresh 222 windowevent_deactivate solutionexplorer commandevent_gotonexterrorinsolution commandevent_gotoeverything
+Topic: 4
+commandevent_undock_from_team_explorer windowevent_deactivate activityevent_ windowevent_activate commandevent_pending_changes windowevent_move commandevent_check__in editevent_ commandevent_ commandevent_vsaction
+Topic: 5
+project classviewcontextmenus tools build properties classviewmultiselectprojectreferencesitems addnewitem newfolder rebuild addreference
+Topic: 6
+commandevent_show_all_files showallfiles 600 buildevent_vsbuildscopeproject_vsbuildactionbuild project commandevent_stop_debugging breakline stopdebugging debuggerevent_design_dbgeventreasonstopdebugging 179
+Topic: 7
+debug startupprojects commandevent_ commandevent_vsaction 6c05 9cd7 6e87cfad 3b7943875b7c 4adf 1280
+Topic: 8
+commandevent_back scopetothis 38 commandevent_scope_to_this projectandsolutioncontextmenus ca8d99245ec3 404e 9648 4b21 d63db1f0
+Topic: 9
+findnext versioncontrolevent_checkout versioncontrolevent_pull versioncontrolevent_rebasefinished versioncontrolevent_commit 370 navigationevent_keyboard debuggerevent_break_dbgeventreasonexceptionthrowndbgexecutionactiondefault debuggerevent_exceptionthrown_system commandevent_23_messages
+Topic: 10
+start commandevent_1_error debug startdebugtarget 295 257 debuggerevent_run_dbgeventreasongo debuggerevent_break_dbgeventreasonbreakpointdbgexecutionactiondefault commandevent_continue stopdebugging
+Topic: 11
+commandevent_1_warning warnings 2211 solutionexplorer refresh 222 commandevent_buildtargetsactionsgrouprunorcancel exportselection text 00c04fc2aae2
+Topic: 12
+windowevent_activate activityevent_ windowevent_move editevent_ windowevent_deactivate documentevent_closing windowevent_close windowevent_create navigationevent_click documentevent_opened
+Topic: 13
+commandevent_0_of_5_messages messages 2212 warnings 2211 activityevent_ 00c04fc2aae2 94de 8c3f 1496a755
+Topic: 14
+commandevent_unknown_button commandevent_update_webactivatorex_to_version_2 commandevent_runinspection commandevent_inspectthis navigationevent_ctrlclick commandevent_currentconfigrunalt commandevent_bulbmenu switchtogotoaction commandevent_generate windowevent_deactivate
+Topic: 15
+commandevent_uninstall commandevent_clear_screen interactiveconsole commandevent_settings functionbreakpoint 00b8868b 4970 a048 410b05508506 f9f5
+Topic: 16
+commandevent_71_messages commandevent_0_of_39_warnings warnings messages windowevent_deactivate 2211 javascript 2212 uriformatexceptiondbgexceptionactiondefault debuggerevent_ignorexceptionnothandleded_system
+Topic: 17
+build buildsolution startwithoutdebugging buildevent_vsbuildscopesolution_vsbuildactionbuild 882 368 buildevent_vsbuildscopeproject_vsbuildactionbuild cancel commandevent_errorsview stylecop
+Topic: 18
+debug locationtoolbar commandevent_vsaction commandevent_ threadcombo stackframecombo 00c04f9902c1 47fb c9dd4a59 83e7
+Topic: 19
+enter commandevent_properties_ alt codemap showitem 22037 4a8b b7f0 a9f6 7951e11d8386
+Topic: 20
+commandevent_check__in url 207 aa7d e8b06f44 6d01 00c04f990343 exit pendingchangespagechangestoexclude tfscontextpendingchangespageincludechanges
+Topic: 21
+edit commandevent_vsaction commandevent_ 11d0 1496a755 8c3f 94de 00c04fc2aae2 linedown lineup
+Topic: 22
+navigationevent_keyboard editevent_ completionevent_filtered commandevent_textcontrol commandevent_completion automatic_code_completion edit commandevent_vsaction breakline enter
+Topic: 23
+commandevent_5_messages messages 2212 windowevent_deactivate activityevent_ windowevent_activate 94de 00c04fc2aae2 8c3f 11d0
+Topic: 24
+commandevent_0_of_2_warnings warnings 2211 activityevent_ editevent_ windowevent_deactivate 00c04fc2aae2 94de 8c3f 1496a755
+Topic: 25
+commandevent_search url 207 e8b06f44 aa7d 6d01 00c04f990343 zoom architecturedesigner windowevent_deactivate
+Topic: 26
+commandevent_promote_to_document commandevent_switch_to_replace_in_files copy commandevent_copy foreachtoforaction movetoouterscopeaction invertifaction specificprofilecleanupselectionaction cut 16
+Topic: 27
+commandevent_0_of_31_messages commandevent_31_messages messages 2212 disableinfilebycommentwarningaction disablewarning commandevent_altenter charright windowevent_move rebuildsolution
+Topic: 28
+commandevent_skip_line_and_ignore_this_exception setnextstatement 258 nullreferenceexceptiondbgexceptionactiondefault debuggerevent_ignorexceptionnothandleded_system debuggerevent_break_15dbgexecutionactiondefault debuggerevent_break_dbgeventreasonexceptionnothandleddbgexecutionactiondefault navigationevent_click debuggerevent_run_dbgeventreasongo uriformatexceptiondbgexceptionactiondefault
+Topic: 29
+commandevent_edit_publish_profiles buildevent_vsbuildscopeproject_vsbuildactionbuild windowevent_deactivate warnings 2211 breakline activityevent_ windowevent_activate editevent_ show_gotosuggester
+Topic: 30
+locationtoolbar debug processcombo commandevent_vsaction 11d2 83e7 c9dd4a59 47fb 00c04f9902c1 commandevent_
+Topic: 31
+commandevent_9_errors commandevent_connect_your_app_to_the_application_insights_service buildevent_vsbuildscopeproject_vsbuildactionbuild commandevent_showoptions errors analyze 2210 commandevent_extensionmanager commandevent_showsettingslayersdialog commentselection
+Topic: 32
+commandevent__labelbutton commandevent_rest_art commandevent_settings selectall 31 commandevent_manage_nuget_packages_for_solution managenugetpackagesforsolution 512 idestateevent_shutdown systemevent_lock
+Topic: 33
+commandevent_view_exception_details commandevent_part_additionalfunctionalitybutton aggregateexceptiondbgexceptionactiondefault navigationevent_click debuggerevent_ignorexceptionnothandleded_system debuggerevent_break_dbgeventreasonexceptionnothandleddbgexecutionactiondefault windowevent_move navigationevent_keyboard threadcombo windowevent_activate
+Topic: 34
+commandevent_collapse_all currentview 8714 300a8877 b214 ab257498ffeb 4385 8a7f collapseall f1help
+Topic: 35
+commandevent_show_on_code_map showitem codemap windowevent_deactivate 7951e11d8386 a9f6 b7f0 4a8b 22037 projectandsolutioncontextmenus
+Topic: 36
+_s ctrl commandevent_sync_with_active_document_ commandevent_selectpartbutton windowevent_deactivate 36 solutionexplorer ca8d99245ec3 404e 9648
+Topic: 37
+edit commandevent_vsaction commandevent_textcontrol delete deletebackwards backspace linedown 17 editevent_ charright
+Topic: 38
+commandevent_install commandevent_11_warnings commandevent_0_of_11_warnings warnings 2211 configurationmanager dockastabbeddocument commandevent_showsettingslayersdialog 771 commandevent_solbuildeventsshowwarningsactions
+Topic: 39
+commandevent_clear_all commandevent_bulbaction resharper jetbrains intentions quickfixes csharp file contextactions scoped
+Topic: 40
+edit 14bc 9b2b 11cf 00aa00573819 5efc7975 commandevent_ paste commandevent_vsaction copy
+Topic: 41
+commandevent_0_of_71_messages messages windowevent_deactivate 2212 classviewitem tfscontextcompare 21507 commandevent_compare classviewcontextmenus b20b
+Topic: 42
+commandevent_publish_web buildevent_vsbuildscopeproject_vsbuildactionbuild exit solutionevent_closesolution editevent_ activityevent_ commandevent_vsaction show_gotosuggester 278 commandevent_featuresuggestion
+Topic: 43
+teamfoundationcontextmenus pendingchangespagechangestoinclude commandevent_vsaction commandevent_ documentevent_closing ffe1131c 4d05 8ea1 9728 34ad4611bda9
+Topic: 44
+commandevent_she_lve selectall 31 tfscontextpendingchangespageview commandevent_treemodelbrowser 6357 pendingchangespagechangestoexclude tfscontextpendingchangespageincludechanges commandevent_open editevent_
+Topic: 45
+commandevent_source_control_explorer commandevent_open_project addexistingitem rename 244 commandevent_existing_item commandevent_rename 150 openproject team
+Topic: 46
+mercurial pendingtask commandevent_vsaction commandevent_ 3000 896e a7f26ca1 4729 0bbe9e380635 336
+Topic: 47
+commandevent_close peekdefinition 2a8866dc 7bde 4dc8 a360 a60679534384 commandevent_peek_definition commandevent_go_to_definition commandevent_gotodeclaration
+Topic: 48
+view commandevent_vsaction objectbrowsingscope navigationevent_click activityevent_ navigatebackward windowevent_activate navigationevent_keyboard 809 commandevent_navigate_backward
+Topic: 49
+commandevent_update editevent_ window commandevent_copy windowevent_activate commandevent_optimizereferences windowevent_move idestateevent_shutdown solutionevent_closesolution commandevent_rest_art
+(10199, 50)
+[[14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]
+ [14]]
+---------------------------------------------------------
+working on :data_200.pickle
+Topic: 0
+commandevent_0_of_39_warnings othercontextmenus zoom cancel float easymdidocumentwindow commandevent_parameterinfo commandevent_showoptions 890 solutionexplorer
+Topic: 1
+commandevent_search architecturedesigner fixbuiltintypereferencestylefix windowevent_deactivate commandevent_structuralnavigation deletecommentaction aggregateexceptiondbgexceptionactiondefault zoom solutionevent_opensolution url
+Topic: 2
+commandevent_pending_changes commandevent_treemodelbrowser commandevent_solutionbuilderrestorenugetactions pendingchangespagemorelink addnewitem commandevent_solbuildeventsshowwarningsactions systemevent_resume pendingchangespagechangestoexclude tfscontextpendingchangespageincludechanges 220
+Topic: 3
+commandevent_0_of_5_messages messages 2212 warnings commandevent_vsaction activityevent_ 2211 00c04fc2aae2 8c3f 1496a755
+Topic: 4
+commandevent_0_of_31_messages commandevent_31_messages messages 2212 commandevent_altenter disableinfilebycommentwarningaction disablewarning charright windowevent_move activityevent_
+Topic: 5
+commandevent_install commandevent__labelbutton windowevent_deactivate selectall 31 worddeletetoend 91 editevent_ commandevent_solutionbuilderrestorenugetactions activityevent_
+Topic: 6
+commandevent_she_lve selectall tfscontextpendingchangespageview 31 6357 commandevent_open editevent_ activityevent_ commandevent_stop_debugging windowevent_activate
+Topic: 7
+file saveall editevent_ documentevent_saved saveselecteditems build 224 windowevent_activate 00aa00573819 11cf
+Topic: 8
+edit commandevent_vsaction linedown commandevent_textcontrol lineup charleft charright breakline linedownextend editevent_
+Topic: 9
+commandevent_9_errors errors 2210 analyze commandevent_moveintomatchingfiles buildevent_vsbuildscopesolution_vsbuildactionclean 895 885 cleansolution buildevent_vsbuildscopeproject_vsbuildactionclean
+Topic: 10
+commandevent_sync_with_active_document_ _s ctrl windowevent_deactivate 36 solutionexplorer 9648 d63db1f0 4b21 404e
+Topic: 11
+commandevent_show_all_files showallfiles project 600 buildevent_vsbuildscopeproject_vsbuildactionbuild properties classviewmultiselectprojectreferencesitems 397 documentevent_saved breakline
+Topic: 12
+commandevent_0_of_2_warnings commandevent_publish_web warnings 2211 windowevent_deactivate buildevent_vsbuildscopeproject_vsbuildactionbuild activityevent_ editevent_ commandevent_vsaction commandevent_
+Topic: 13
+enter breakline systemevent_unlock completionevent_applied commandevent_completecodebasic overtypemode 57 lineend 23 expand_typeof
+Topic: 14
+commandevent_back scopetothis projectandsolutioncontextmenus commandevent_scope_to_this 38 ca8d99245ec3 404e 4b21 d63db1f0 9648
+Topic: 15
+commandevent_textcontrol editevent_ commandevent_vsaction edit navigationevent_keyboard completionevent_filtered deletebackwards backspace automatic_code_completion commandevent_completion
+Topic: 16
+commandevent_collapse_all collapseall solutionexplorer 29 9648 d63db1f0 ca8d99245ec3 404e 4b21 windowevent_deactivate
+Topic: 17
+mercurial pendingtask commandevent_ commandevent_vsaction 3000 4729 a7f26ca1 0bbe9e380635 896e 336
+Topic: 18
+locationtoolbar debug processcombo 11d2 c9dd4a59 47fb 00c04f9902c1 83e7 commandevent_vsaction commandevent_
+Topic: 19
+commandevent_update editevent_ window commandevent_optimizereferences windowevent_move activityevent_ solutionevent_closesolution windowevent_activate idestateevent_shutdown windowevent_deactivate
+Topic: 20
+commandevent_source_control_explorer editevent_ commandevent_analyzereferences windowevent_close documentevent_closing team sourcecontrolexplorer tfsgetlatestversion commandevent_optimizereferences solutionevent_closesolution
+Topic: 21
+alt commandevent_properties_ enter showitem codemap properties classviewmultiselectprojectreferencesitems 22037 4a8b a9f6
+Topic: 22
+charrightextend teamfoundationcontextmenus pendingchangespagechangestoinclude commandevent_ 9728 34ad4611bda9 8ea1 ffe1131c 4d05 documentevent_closing
+Topic: 23
+commandevent_undock_from_team_explorer windowevent_deactivate activityevent_ windowevent_activate windowevent_move commandevent_check__in editevent_ commandevent_ commandevent_home commandevent_vsaction
+Topic: 24
+commandevent_clear_all commandevent_connect_your_app_to_the_application_insights_service buildevent_vsbuildscopeproject_vsbuildactionbuild activityevent_ commandevent_showsettingslayersdialog solutionevent_opensolution idestateevent_startup commandevent_extensionmanager windowevent_move edit
+Topic: 25
+commandevent_0_of_71_messages messages windowevent_deactivate 2212 classviewitem tfscontextcompare 21507 activityevent_ commandevent_compare classviewcontextmenus
+Topic: 26
+debug start windowevent_move commandevent_ activityevent_ windowevent_activate startdebugtarget commandevent_vsaction 9b2b 14bc
+Topic: 27
+commandevent_clear_screen findnext replace versioncontrolevent_pull commandevent_settings versioncontrolevent_rebasefinished 370 tools versioncontrolevent_commit 230
+Topic: 28
+commandevent_manage_connections commandevent_connect_to_team_project activityevent_ show_gotosuggester othercontextmenus tfsteamexplorer commandevent_featuresuggestion 16f0a4c793f5 b304 e234e66e
+Topic: 29
+commandevent_11_warnings commandevent_0_of_11_warnings url aa7d 6d01 e8b06f44 00c04f990343 207 warnings 2211
+Topic: 30
+commandevent_unknown_button commandevent_currentconfigrunalt commandevent_pullup specifytostringinvariantculturefix windowevent_deactivate pausecontinue commandevent_errorsview warnings 2211 commandevent_completecodebasic
+Topic: 31
+debug startupprojects commandevent_ commandevent_vsaction 1280 6e87cfad 4adf 9cd7 3b7943875b7c 6c05
+Topic: 32
+windowevent_activate activityevent_ windowevent_move view commandevent_vsaction objectbrowsingscope documentevent_closing windowevent_deactivate windowevent_close editevent_
+Topic: 33
+commandevent_refresh windowevent_deactivate solutionexplorer refresh 222 36 commandevent_gototype systemevent_unlock commandevent_gotoeverything 9648
+Topic: 34
+commandevent_home commandevent_findusages home 31 pausecontinue windowevent_deactivate commandevent_showerrorsview commandevent_solution_errors showignoredissues commandevent_errorsview
+Topic: 35
+commandevent_1_error commandevent_update_bootstrap_to_version_3 commandevent_open_project openproject 217 errors commandevent_local_windows_debugger commandevent_rest_art managenugetpackages idestateevent_shutdown
+Topic: 36
+commandevent_1_warning commandevent_0_of_1_warning warnings 2211 refresh solutionexplorer commandevent_buildtargetsactionsgrouprunorcancel text exportselection 222
+Topic: 37
+edit commandevent_vsaction 11cf 5efc7975 00aa00573819 9b2b 14bc commandevent_ paste delete
+Topic: 38
+commandevent_edit_publish_profiles buildevent_vsbuildscopeproject_vsbuildactionbuild windowevent_deactivate breakall debuggerevent_break_dbgeventreasonuserbreakdbgexecutionactiondefault warnings commandevent_break_all 180 2211 show_gotosuggester
+Topic: 39
+commandevent_5_messages messages windowevent_deactivate 2212 windowevent_activate activityevent_ commandevent_vsaction commandevent_internet_explorer saveselecteditems 331
+Topic: 40
+debug threadcombo stackframecombo commandevent_vsaction commandevent_ 280 288 11cf 00aa00573819 5efc7975
+Topic: 41
+undo 43 commandevent_bulbaction resharper jetbrains intentions quickfixes csharp contextactions redo
+Topic: 42
+commandevent_show_on_code_map projectandsolutioncontextmenus scopetothis codemap showitem windowevent_deactivate 38 commandevent_scope_to_this commandevent_optimizereferences 7951e11d8386
+Topic: 43
+94de 11d0 1496a755 8c3f 00c04fc2aae2 commandevent_ selectioncancel wordnext lineend wordprevious
+Topic: 44
+commandevent_view_exception_details splitdeclarationaction method aggregateexceptiondbgexceptionactiondefault invokeasstaticmethodaction replacewithboolconstfix replaceconditionwithrespectivebranchfix debuggerevent_ignorexceptionnothandleded_system breakall navigationevent_click
+Topic: 45
+commandevent_71_messages messages windowevent_deactivate 2212 commandevent_google_chrome commandevent_currentconfigdebug debuggerevent_run_dbgeventreasonlaunchprogram commandevent_solutionbuildertres commandevent_stop_debugging stopdebugging
+Topic: 46
+commandevent_uninstall commandevent_rest_art currentview 300a8877 ab257498ffeb 4385 8a7f b214 8714 editevent_
+Topic: 47
+commandevent_skip_line_and_ignore_this_exception commandevent_promote_to_document setnextstatement nullreferenceexceptiondbgexceptionactiondefault 258 debuggerevent_ignorexceptionnothandleded_system debuggerevent_break_dbgeventreasonexceptionnothandleddbgexecutionactiondefault debuggerevent_break_15dbgexecutionactiondefault debuggerevent_run_dbgeventreasongo windowevent_activate
+Topic: 48
+commandevent_close peekdefinition 7bde a360 2a8866dc 4dc8 a60679534384 commandevent_peek_definition commandevent_go_to_definition findallreferences
+Topic: 49
+commandevent_check__in charleftextend pausecontinue publish commandevent_errorsview open commandevent_publish 2006 261 windowevent_activate
+(7622, 50)
+[[30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [30]
+ [32]
+ [32]
+ [20]
+ [32]
+ [48]]
+---------------------------------------------------------
