@@ -258,7 +258,7 @@ for windowSize in windowSizes:
         session = np.array(session)
 
         start = 0
-        while start + windowSize < session.shape[0]:
+        while start + windowSize <= session.shape[0]:
             windows = np.vstack((windows, session[start: start + windowSize]))
             start  += windowSize
     windows = windows[1:, :] # remove the first rows of zeros
