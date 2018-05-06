@@ -109,7 +109,7 @@ def main():
                     testAccuracy = getAccuracy(net, Xtest)
                     accuracyTrace.append([trainAccuracy,testAccuracy])
 
-                    print('[%d, %5d] loss: %.3f' , trainAccuracy: %.3f ,  testAccuracy: %.3f %
+                    print('[%d, %5d] loss: %.3f , trainAccuracy: %.3f ,  testAccuracy: %.3f' %
                           (epoch + 1, i + 1, running_loss / logStep, trainAccuracy, testAccuracy))
                     running_loss = 0.0
 
