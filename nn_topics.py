@@ -8,8 +8,8 @@ from random import randint
 import sys
 import mlutils as ml
 import pickle
-from NNClassifier import NNFeedForward
-from NNClassifier_conv import NNModelConv
+from NNFeedforward import NNFeedForward
+from NNConvolution import NNModelConv
 import matplotlib.pyplot as plt
 
 def getAccuracy(net, X, xCols, tCols):
