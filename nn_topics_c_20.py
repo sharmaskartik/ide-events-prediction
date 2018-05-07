@@ -53,10 +53,10 @@ def main():
     type = int(sys.argv[2])
 
     #files = [r"topics_50.pickle", r"topics_100.pickle", r"topics_150.pickle", r"topics_200.pickle"]
-    dataDir = "../dataset/topics/"
-    #dataDir = "../dataset/topics_20/"
-    targetDir = "../dataset/accuracy/"
-    #targetDir = "../dataset/accuracy_20/"
+    #dataDir = "../dataset/topics/"
+    dataDir = "../dataset/topics_20/"
+    #targetDir = "../dataset/accuracy/"
+    targetDir = "../dataset/accuracy_20/"
     files = ["50", "100", "150", "200"]
 
     if type == 1:
@@ -78,16 +78,16 @@ def main():
         xCols = X.shape[1]
 
         T = np.argmax(X[1:,0:tCols],axis =1).reshape(-1,1)
-        X = X[1:,:]
+        X = X[:X.shape[0] - 1,:]
 
         tCols = np.unique(T).shape[0]
 
         print(X.shape, T.shape, tCols)
-        exit(0)
+        
         # MAIN CODE STARTS HERE
 
 #            continue
-        batch_size = 50
+        batch_size = 200
 
         Xtrain, Ttrain, Xtest, Ttest = ml.partition(X,T,[0.8, 0.2],shuffle=True)
 

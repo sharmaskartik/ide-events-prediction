@@ -79,13 +79,13 @@ def main():
         xCols = X.shape[1]
 
         T = X[1:,0:tCols]
-        X = X[1:,:]
+        X = X[:X.shape[0] - 1,:]
 
         print(X.shape, T.shape)
         # MAIN CODE STARTS HERE
 
 #            continue
-        batch_size = 10
+        batch_size = 200
 
         Xtrain, Ttrain, Xtest, Ttest = ml.partition(X,T,[0.8, 0.2],shuffle=True)
 
