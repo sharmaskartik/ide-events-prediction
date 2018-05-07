@@ -15,7 +15,7 @@ def display_topics(model, feature_names, no_top_words):
 #
 # print(type(documents[0]))
 dir = "../dataset/main_windows/"
-target_dir = "../dataset/topics_20/"
+target_dir = "../dataset/topics/"
 files = [r"data_50.pickle", r"data_100.pickle", r"data_150.pickle", r"data_200.pickle"]
 for file in files:
     with open(dir+file, "rb") as input_file:
@@ -38,10 +38,10 @@ for file in files:
     tf = tf_vectorizer.fit_transform(documents)
     tf_feature_names = tf_vectorizer.get_feature_names()
 
-    no_topics = 20
+    no_topics = 50
 
     # Run LDA
-    lda = LatentDirichletAllocation(n_components=no_topics, max_iter=1000, doc_topic_prior=0.3, topic_word_prior=.9, learning_method='online', learning_offset=50.,random_state=0).fit(tf)
+    lda = LatentDirichletAllocation(n_components=no_topics, max_iter=300, doc_topic_prior=0.3, topic_word_prior=.9, learning_method='online', learning_offset=50.,random_state=0).fit(tf)
 
     no_top_words = 10
     display_topics(lda, tf_feature_names, no_top_words)
