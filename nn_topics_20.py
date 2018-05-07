@@ -85,7 +85,7 @@ def main():
         # MAIN CODE STARTS HERE
 
 #            continue
-        batch_size = 50
+        batch_size = 10
 
         Xtrain, Ttrain, Xtest, Ttest = ml.partition(X,T,[0.8, 0.2],shuffle=True)
 
@@ -112,7 +112,7 @@ def main():
         #TRAINING THE NETWORK
         print("before training")
         for epoch in range(num_epochs):  # loop over the dataset multiple times
-            print("Epoch:", epoch)
+            
             running_loss = 0.0
             for i, data in enumerate(trainloader, 0):
 
