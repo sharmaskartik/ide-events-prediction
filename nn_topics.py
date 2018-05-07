@@ -133,16 +133,17 @@ def main():
 
                 # print statistics
                 running_loss += loss.data
-                if i % logStep == logStep - 1:    # print every logStep mini-batches
+                
+            if epoch % logStep == logStep - 1:    # print every logStep mini-batches
 
-                    #for data in testloader:
-                    trainAccuracy = getAccuracy(net, Xtrain, xCols, tCols, type)
-                    testAccuracy = getAccuracy(net, Xtest, xCols, tCols, type)
-                    accuracyTrace.append([trainAccuracy,testAccuracy])
+                #for data in testloader:
+                trainAccuracy = getAccuracy(net, Xtrain, xCols, tCols, type)
+                testAccuracy = getAccuracy(net, Xtest, xCols, tCols, type)
+                accuracyTrace.append([trainAccuracy,testAccuracy])
 
-                    print('[%d, %d] loss: %.3f , trainAccuracy: %.3f ,  testAccuracy: %.3f' %
-                          (epoch + 1, i + 1,running_loss / 100, trainAccuracy, testAccuracy))
-                    running_loss = 0.0
+                print('[%d, %d] loss: %.3f , trainAccuracy: %.3f ,  testAccuracy: %.3f' %
+                      (epoch + 1, i + 1,running_loss / 100, trainAccuracy, testAccuracy))
+                running_loss = 0.0
 
 
         accuracyTrace = np.array(accuracyTrace).reshape(-1, 2)
