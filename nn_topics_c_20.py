@@ -46,11 +46,11 @@ def rollingWindows(X, windowSize):
 
 def main():
 
-    if(len(sys.argv) != 3):
-        print("Usage: python nn_topics <file> <mode> (1: Convolution Network 2: FeedForward)")
+    if(len(sys.argv) != 2):
+        print("Usage: python nn_topics <file> ")
         exit(0)
     file = sys.argv[1]
-    type = int(sys.argv[2])
+    modes = [1, 2]
 
     #files = [r"topics_50.pickle", r"topics_100.pickle", r"topics_150.pickle", r"topics_200.pickle"]
     #dataDir = "../dataset/topics/"
@@ -58,99 +58,99 @@ def main():
     #targetDir = "../dataset/accuracy/"
     targetDir = "../dataset/accuracy_20/"
     files = ["50", "100", "150", "200"]
+    for type in modes:
+        if type == 1:
+            print("Running in Convolution Mode")
+            window_sizes = [10]
+            netClass = NNModelConv
+        else:
+            print("Running in FeedForward Mode")
+            window_sizes = [1 , 3, 5]
+            netClass = NNFeedForward
 
-    if type == 1:
-        print("Running in Convolution Mode")
-        window_sizes = [10]
-        netClass = NNModelConv
-    else:
-        print("Running in FeedForward Mode")
-        window_sizes = [1 , 3, 5]
-        netClass = NNFeedForward
+        for window_size in window_sizes:
+            print("Working on: "+file+", at window_size: "+ str(window_size))
+            with open(dataDir+r"topics_"+file+".pickle", "rb") as input_file:
+                topics = pickle.load(input_file)
 
-    for window_size in window_sizes:
-        print("Working on: "+file+", at window_size: "+ str(window_size))
-        with open(dataDir+r"topics_"+file+".pickle", "rb") as input_file:
-            topics = pickle.load(input_file)
+            X = rollingWindows(topics, window_size)
+            tCols = topics.shape[1]
+            xCols = X.shape[1]
 
-        X = rollingWindows(topics, window_size)
-        tCols = topics.shape[1]
-        xCols = X.shape[1]
+            T = np.argmax(X[1:,0:tCols],axis =1).reshape(-1,1)
+            X = X[:X.shape[0] - 1,:]
 
-        T = np.argmax(X[1:,0:tCols],axis =1).reshape(-1,1)
-        X = X[:X.shape[0] - 1,:]
+            tCols = np.unique(T).shape[0]
 
-        tCols = np.unique(T).shape[0]
+            print(X.shape, T.shape, tCols)
 
-        print(X.shape, T.shape, tCols)
-        
-        # MAIN CODE STARTS HERE
+            # MAIN CODE STARTS HERE
 
-#            continue
-        batch_size = 200
+    #            continue
+            batch_size = 200
 
-        Xtrain, Ttrain, Xtest, Ttest = ml.partition(X,T,[0.8, 0.2],shuffle=True)
+            Xtrain, Ttrain, Xtest, Ttest = ml.partition(X,T,[0.8, 0.2],shuffle=True)
 
-        Xtrain = np.hstack((Xtrain, Ttrain))
-        Xtrain = torch.from_numpy(Xtrain).type(torch.cuda.FloatTensor)
-        trainloader = torch.utils.data.DataLoader(Xtrain, batch_size=batch_size, shuffle=True, num_workers=0)
-
-
-        Xtest = np.hstack((Xtest, Ttest))
-        Xtest = torch.from_numpy(Xtest).type(torch.cuda.FloatTensor)
-        testloader = torch.utils.data.DataLoader(Xtest, batch_size=batch_size, shuffle=True, num_workers=0)
+            Xtrain = np.hstack((Xtrain, Ttrain))
+            Xtrain = torch.from_numpy(Xtrain).type(torch.cuda.FloatTensor)
+            trainloader = torch.utils.data.DataLoader(Xtrain, batch_size=batch_size, shuffle=True, num_workers=0)
 
 
-        net = netClass(xCols, tCols)
-        net = net.cuda()
-        num_epochs = 2000
-        learning_rate = 0.001
+            Xtest = np.hstack((Xtest, Ttest))
+            Xtest = torch.from_numpy(Xtest).type(torch.cuda.FloatTensor)
+            testloader = torch.utils.data.DataLoader(Xtest, batch_size=batch_size, shuffle=True, num_workers=0)
 
-        criterion = nn.CrossEntropyLoss()
-        optimizer = optim.SGD(net.parameters(), lr=learning_rate, momentum=0.9)
 
-        accuracyTrace =[]
-        logStep = 100
-        #TRAINING THE NETWORK
-        print("before training")
-        for epoch in range(num_epochs):  # loop over the dataset multiple times
-            print("Epoch:", epoch)
-            running_loss = 0.0
-            for i, data in enumerate(trainloader, 0):
+            net = netClass(xCols, tCols)
+            net = net.cuda()
+            num_epochs = 2000
+            learning_rate = 0.001
 
-                # get the inputs
-                inputs =  Variable(data[:,0: xCols], requires_grad=True)
-                if type == 1:
-                    rows, cols = inputs.size()
-                    inputs = inputs.contiguous().view((rows, 1, cols))
-                labels = Variable(data[:,-1].type(torch.cuda.LongTensor))
-                # zero the parameter gradients
-                optimizer.zero_grad()
+            criterion = nn.CrossEntropyLoss()
+            optimizer = optim.SGD(net.parameters(), lr=learning_rate, momentum=0.9)
 
-                # forward + backward + optimize
-                outputs = net(inputs)
-
-                loss = criterion(outputs, labels)
-                loss.backward()
-                optimizer.step()
-
-                # print statistics
-                running_loss += loss.data
-
-            if epoch % logStep == logStep - 1:    # print every logStep mini-batches
-
-                #for data in testloader:
-                trainAccuracy = getAccuracy(net, Xtrain, xCols, tCols, type)
-                testAccuracy = getAccuracy(net, Xtest, xCols, tCols, type)
-                accuracyTrace.append([trainAccuracy,testAccuracy])
-
-                print('[%d, %d] loss: %.3f , trainAccuracy: %.3f ,  testAccuracy: %.3f' %
-                      (epoch + 1, i + 1,running_loss / 100, trainAccuracy, testAccuracy))
+            accuracyTrace =[]
+            logStep = 100
+            #TRAINING THE NETWORK
+            print("before training")
+            for epoch in range(num_epochs):  # loop over the dataset multiple times
+                print("Epoch:", epoch)
                 running_loss = 0.0
+                for i, data in enumerate(trainloader, 0):
+
+                    # get the inputs
+                    inputs =  Variable(data[:,0: xCols], requires_grad=True)
+                    if type == 1:
+                        rows, cols = inputs.size()
+                        inputs = inputs.contiguous().view((rows, 1, cols))
+                    labels = Variable(data[:,-1].type(torch.cuda.LongTensor))
+                    # zero the parameter gradients
+                    optimizer.zero_grad()
+
+                    # forward + backward + optimize
+                    outputs = net(inputs)
+
+                    loss = criterion(outputs, labels)
+                    loss.backward()
+                    optimizer.step()
+
+                    # print statistics
+                    running_loss += loss.data
+
+                if epoch % logStep == logStep - 1:    # print every logStep mini-batches
+
+                    #for data in testloader:
+                    trainAccuracy = getAccuracy(net, Xtrain, xCols, tCols, type)
+                    testAccuracy = getAccuracy(net, Xtest, xCols, tCols, type)
+                    accuracyTrace.append([trainAccuracy,testAccuracy])
+
+                    print('[%d, %d] loss: %.3f , trainAccuracy: %.3f ,  testAccuracy: %.3f' %
+                          (epoch + 1, i + 1,running_loss / 100, trainAccuracy, testAccuracy))
+                    running_loss = 0.0
 
 
-        accuracyTrace = np.array(accuracyTrace).reshape(-1, 2)
+            accuracyTrace = np.array(accuracyTrace).reshape(-1, 2)
 
-        with open(targetDir+"type_"+str(type)+"_accuracy_"+file+"_"+str(window_size)+".pickle", "wb") as output_file:
-            pickle.dump(accuracyTrace, output_file)
+            with open(targetDir+"type_"+str(type)+"_accuracy_"+file+"_win_"+str(window_size)+".pickle", "wb") as output_file:
+                pickle.dump(accuracyTrace, output_file)
 if __name__ == "__main__": main()
