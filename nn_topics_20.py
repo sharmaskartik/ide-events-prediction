@@ -24,6 +24,7 @@ def getAccuracy(net, X, xCols, tCols, type):
     outputs = net(inputs)
     _, predicted = torch.max(outputs, 1)
     _, labels = torch.max(labels, 1)
+
     totalCorrect = (predicted == labels).sum().data
     totalSamples = labels.data.size()[0]
 
@@ -53,10 +54,10 @@ def main():
     type = int(sys.argv[2])
 
     #files = [r"topics_50.pickle", r"topics_100.pickle", r"topics_150.pickle", r"topics_200.pickle"]
-    dataDir = "../dataset/topics/"
-    #dataDir = "../dataset/topics_20/"
-    targetDir = "../dataset/accuracy/"
-    #targetDir = "../dataset/accuracy_20/"
+    #dataDir = "../dataset/topics/"
+    dataDir = "../dataset/topics_20/"
+    #targetDir = "../dataset/accuracy/"
+    targetDir = "../dataset/accuracy_20/"
     files = ["50", "100", "150", "200"]
 
     if type == 1:
