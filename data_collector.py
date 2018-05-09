@@ -5,7 +5,7 @@ from datetime import datetime
 import time
 from dateutil import parser
 import pickle
-
+import re
 ACTIVITY_EVENT = "KaVE.Commons.Model.Events.ActivityEvent, KaVE.Commons"
 COMMAND_EVENT = "KaVE.Commons.Model.Events.CommandEvent, KaVE.Commons"
 COMPLETION_EVENT = "KaVE.Commons.Model.Events.CompletionEvents.CompletionEvent, KaVE.Commons"
@@ -138,6 +138,7 @@ triggered_by = {
 
 
 dirPath = "../dataset/main"
+targetPath = "../dataset/main_windows/"
 events = []
 
 for dateDir in listdir(dirPath):
@@ -159,8 +160,8 @@ for dateDir in listdir(dirPath):
             word = event_type.split(",")[0].split(".")[-1] + "_"
 
             if  event_type == COMMAND_EVENT:
-                word += str(data['CommandId'].replace(" ","_"))
-
+                temp = re.sub(r"{.*}:\d+:","",data['CommandId'])
+                word += re.sub(r":\d+:","",temp).replace(" ", "_")
             elif event_type == IDE_STATE_EVENT:
                 word += ide_life_cycle_phase[str(data['IDELifecyclePhase'])]
 
@@ -215,9 +216,9 @@ for dateDir in listdir(dirPath):
                     events.append([vcWord, time])
                 continue
 
-
+            word = word.replace("-","_")
+            word = word.replace(".","_")
             #word += "_" + triggered_by[str(data["TriggeredBy"])]
-
             time = data["TriggeredAt"]
 
             events.append([word, time])
@@ -246,7 +247,8 @@ for event in events:
 
 
 # NOW CREATE WINDOWS FROM SESSIONS
-windowSizes = [50, 100, 150, 200]
+#windowSizes = [50, 100, 150, 200]
+windowSizes = [50]
 
 for windowSize in windowSizes:
     windows = np.zeros([1, windowSize])
@@ -258,6 +260,6 @@ for windowSize in windowSizes:
             windows = np.vstack((windows, session[start: start + windowSize]))
             start  += windowSize
     windows = windows[1:, :] # remove the first rows of zeros
-    with open(r"data_"+str(windowSize)+".pickle", "wb") as output_file:
+    with open(targetPath+r"data_"+str(windowSize)+".pickle", "wb") as output_file:
         pickle.dump(windows, output_file)
     print(windows.shape)

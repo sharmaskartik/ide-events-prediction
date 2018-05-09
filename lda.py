@@ -15,8 +15,9 @@ def display_topics(model, feature_names, no_top_words):
 #
 # print(type(documents[0]))
 dir = "../dataset/main_windows/"
-target_dir = "../dataset/topics_20/"
+target_dir = "../dataset/topics/"
 files = [r"data_50.pickle", r"data_100.pickle", r"data_150.pickle", r"data_200.pickle"]
+files = [r"data_50.pickle"]
 for file in files:
     with open(dir+file, "rb") as input_file:
         data = pickle.load(input_file)
@@ -29,16 +30,15 @@ for file in files:
             doc += " " + word
         documents.append(doc)
 
-
     no_features = 1000
 
 
     # LDA can only use raw term counts for LDA because it is a probabilistic graphical model
-    tf_vectorizer = CountVectorizer(max_df=0.95, min_df=2, max_features=no_features, stop_words='english')
+    tf_vectorizer = CountVectorizer(max_df=0.95, min_df=2, max_features=no_features,)
     tf = tf_vectorizer.fit_transform(documents)
     tf_feature_names = tf_vectorizer.get_feature_names()
 
-    no_topics = 20
+    no_topics = 50
 
     # Run LDA
     lda = LatentDirichletAllocation(n_components=no_topics, max_iter=300, doc_topic_prior=1, topic_word_prior=.1, learning_method='online', learning_offset=50.,random_state=0).fit(tf)
