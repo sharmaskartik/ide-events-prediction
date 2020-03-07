@@ -1,12 +1,17 @@
 import json
 import numpy as np
 from os import listdir
+import os
 from datetime import datetime
 import time
 from dateutil import parser
 import pickle
 import re
+
+#no processing for these events
 ACTIVITY_EVENT = "KaVE.Commons.Model.Events.ActivityEvent, KaVE.Commons"
+EDIT_EVENT = "KaVE.Commons.Model.Events.VisualStudio.EditEvent, KaVE.Commons"
+
 COMMAND_EVENT = "KaVE.Commons.Model.Events.CommandEvent, KaVE.Commons"
 COMPLETION_EVENT = "KaVE.Commons.Model.Events.CompletionEvents.CompletionEvent, KaVE.Commons"
 completion_termination_state ={
@@ -35,7 +40,7 @@ document_action = {
 }
 
 
-EDIT_EVENT = "KaVE.Commons.Model.Events.VisualStudio.EditEvent, KaVE.Commons"
+
 
 
 FIND_EVENT = "KaVE.Commons.Model.Events.VisualStudio.FindEvent, KaVE.Commons"
@@ -137,18 +142,25 @@ triggered_by = {
 }
 
 
-dirPath = "../dataset/main"
-targetPath = "../dataset/main_windows/"
+dirPath = "/s/neptune/a/nobackup/kartikay/Events-170301-2"
+# dirPath = "/s/neptune/a/nobackup/kartikay/temp"
+targetPath = "/s/chopin/l/grad/kartikay/code/sem/project/extracted_events_data"
+
+log_file = open(os.path.join(targetPath, 'log.txt'),"w+")
 events = []
 
 for dateDir in listdir(dirPath):
     print("In "+dateDir)
-    for userDir in listdir(dirPath+"/"+dateDir):
+    for userDir in listdir(os.path.join(dirPath, dateDir)):
 
-        numFiles = len(listdir(dirPath+"/"+dateDir+"/"+userDir))
-        print("In "+dirPath+"/"+dateDir+"/"+userDir," ----- contains "+str(numFiles)+" number of files")
+        path_to_user_dir = os.path.join(dirPath, dateDir, userDir)
+        if not os.path.isdir(path_to_user_dir):
+            continue
+        numFiles = len(listdir(path_to_user_dir))
+        print("Directory s", os.path.join(dateDir, userDir)," contains ", str(numFiles), " files")
         for i in range(numFiles):
-            data = json.load(open(dirPath+"/"+dateDir+"/"+userDir+"/"+str(i)+".json"))
+            path_to_json = os.path.join(dirPath, dateDir, userDir, str(i)+".json")
+            data = json.load(open(path_to_json))
             event_type = data['$type']
 
             if "ErrorEvent" in event_type or "InfoEvent" in event_type:
@@ -160,8 +172,13 @@ for dateDir in listdir(dirPath):
             word = event_type.split(",")[0].split(".")[-1] + "_"
 
             if  event_type == COMMAND_EVENT:
-                temp = re.sub(r"{.*}:\d+:","",data['CommandId'])
-                word += re.sub(r":\d+:","",temp).replace(" ", "_")
+                #to remove substrings like - '{5EFC7975-14BC-11CF-9B2B-00AA00573819}:43:Edit.Undo'
+                # we want to retain Edit.Undo
+                temp = re.sub(r"{.*}:\d+:","", data['CommandId'])
+
+                #to remove the string between colons - VsAction:1:Edit.Undo'
+                #we want to retain VsAction.Edit.Undo
+                word += re.sub(r":\d+:","_",temp).replace(" ", ".")
             elif event_type == IDE_STATE_EVENT:
                 word += ide_life_cycle_phase[str(data['IDELifecyclePhase'])]
 
@@ -186,9 +203,10 @@ for dateDir in listdir(dirPath):
 
             elif event_type == DEBUGGER_EVENT:
                 try:
-                    word += debugger_mode[str(data['Mode'])] + "_" + str(data['Reason']) + str(data['Action'])
+                    word += debugger_mode[str(data['Mode'])] + "_" + str(data['Reason']) + '_Action_' + str(data['Action'])
                 except:
                     word += debugger_mode[str(data['Mode'])] + "_" + str(data['Reason'])
+
             elif event_type == FIND_EVENT:
                 word += "Cancelled_" + str(data['Cancelled'])
 
@@ -206,23 +224,32 @@ for dateDir in listdir(dirPath):
                     result = "Pass"
                 else:
                     result = "Fail"
-                word += "Aborted_" + str(data['WasAborted']) + "_" + result
+                word += "Aborted_" + str(data['WasAborted']) + "_Result_" + result
 
             elif event_type == VERSION_CONTROL_EVENT:
                 actions = data["Actions"]
                 for action in actions:
                     vcWord  = word + version_control_action_type[str(action['ActionType'])]
                     time = action["ExecutedAt"]
-                    events.append([vcWord, time])
+                    events.append([vcWord, userDir, time])
                 continue
 
             word = word.replace("-","_")
             word = word.replace(".","_")
             #word += "_" + triggered_by[str(data["TriggeredBy"])]
+
+            # if not re.match("^[A-Za-z0-9_]*$", word):
+            #     log_file.write('Character Issue*****' + word + '*****' + path_to_json+ '\n')
+            #
+            # if event_type == FIND_EVENT:
+            #     log_file.write('FIND_EVENT*****' + path_to_json+ '\n')
+
             time = data["TriggeredAt"]
 
-            events.append([word, time])
+            #if the word contains anything other than alphabets and undersores - log the message
+            events.append([word, userDir, time])
 
+log_file.close()
 events = np.array(events)
 
 ## WE HAVE THE DATA HERE IN ONE ARRAY
@@ -230,36 +257,5 @@ events = np.array(events)
 
 print(events.shape)
 
-sessions = []
-tempSession = []
-lastTime = int(parser.parse(events[0][1]).strftime("%s"))
-
-for event in events:
-
-    currentTime = int(parser.parse(event[1]).strftime("%s"))
-    if(currentTime - lastTime > 300):
-        sessions.append(tempSession)
-        tempSession = []
-        #print("difference greater than 5 minutes")
-    tempSession.append(event[0])
-
-    lastTime = currentTime
-
-
-# NOW CREATE WINDOWS FROM SESSIONS
-#windowSizes = [50, 100, 150, 200]
-windowSizes = [50]
-
-for windowSize in windowSizes:
-    windows = np.zeros([1, windowSize])
-    for session in sessions:
-        session = np.array(session)
-
-        start = 0
-        while start + windowSize <= session.shape[0]:
-            windows = np.vstack((windows, session[start: start + windowSize]))
-            start  += windowSize
-    windows = windows[1:, :] # remove the first rows of zeros
-    with open(targetPath+r"data_"+str(windowSize)+".pickle", "wb") as output_file:
-        pickle.dump(windows, output_file)
-    print(windows.shape)
+with open(os.path.join(targetPath, 'extracted_events.pickle'), 'wb') as f:
+    pickle.dump(events, f)
